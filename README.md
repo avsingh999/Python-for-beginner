@@ -24,7 +24,9 @@ This repostory contain a simple example, codes in <strong>python</strong>. It wi
 - go to this link it will help to you for contribution
 
 https://www.pythonforbeginners.com/
+
 https://www.programiz.com/python-programming
+
 https://www.guru99.com/python-tutorials.html
 
 ## Github tutorial
