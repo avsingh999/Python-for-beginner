@@ -28,4 +28,4 @@ name = input('What is your name? ')
 age = int(input('How old are you? '))
 ```
 
-Remember that the response of the input is aways a string, so to make the age a integer number we have to change the type from string to int, by using the function int()
+Remember that the response of the input is aways a string, so to make the age a integer number we have to change the type from string to int by using the function int()
