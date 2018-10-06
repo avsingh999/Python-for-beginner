@@ -1,0 +1,14 @@
+ON Windows 
+just go to wwww.python.orgs/downloads/
+
+select and download the version you want to install!
+
+Click next pretty much everytime let the settings be default if you're a new user!
+
+Check the "Add Python to PATH" button.
+
+After installation to check :
+Goto to cmd (start menu search- cmd)
+type - python
+>>>
+there it should take to python environment and its verison with few details would be shown.
