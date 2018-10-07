@@ -12,9 +12,14 @@ Python is widely used in Artificial Intelligence, Natural Language Generation, N
 ### Python-for-beginner
 This repostory contain a simple example, codes in <strong>python</strong>. It will help to beginner to learn <strong>python</strong> from begining.
 
+
 - [hello world](https://github.com/avsingh999/Python-for-beginner/blob/master/Hello%20World)
 - [Get input in python](https://github.com/avsingh999/Python-for-beginner/blob/master/How%20to%20get%20input%20from%20user%20in%20python.md)
 - [How to print in python](https://github.com/avsingh999/Python-for-beginner/blob/master/How%20to%20print%20in%20python.md)
+- [How to add two lists in python](https://github.com/avsingh999/Python-for-beginner/blob/master/How%20to%20add%20two%20lists%20in%20python.md)
+- [How to clone list in python](https://github.com/avsingh999/Python-for-beginner/blob/master/How%20to%20clone%20list%20in%20python.md)
+- [How to count list element frequency in python](https://github.com/avsingh999/Python-for-beginner/blob/master/How%20to%20count%20list%20element%20frequency%20in%20python.md)
+- [How to get input from user in python](https://github.com/avsingh999/Python-for-beginner/blob/master/How%20to%20get%20input%20from%20user%20in%20python.md)
 - [for loop in python](https://github.com/mayankw/Python-for-beginner/blob/master/For%20loop%20in%20python.md)
 - [if else in python](https://github.com/avsingh999/Python-for-beginner/blob/master/if-else_python.md)
 
