@@ -23,7 +23,7 @@ This repostory contain a simple example, codes in <strong>python</strong>. It wi
 - [for loop in python](https://github.com/mayankw/Python-for-beginner/blob/master/For%20loop%20in%20python.md)
 - [if else in python](https://github.com/avsingh999/Python-for-beginner/blob/master/if-else_python.md)
 - [Basic for loop in python](https://github.com/avsingh999/Python-for-beginner/blob/master/Basic_forloop_application.md)
-
+- [Basics of Dictionary in Python](https://github.com/avsingh999/Python-for-beginner/blob/master/Basics%20of%20Dictionary.md)
 
 ## How to Contribute
 
