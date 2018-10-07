@@ -19,6 +19,7 @@ This repostory contain a simple example, codes in <strong>python</strong>. It wi
 - [if else in python](https://github.com/avsingh999/Python-for-beginner/blob/master/if-else_python.md)
 
 
+
 ## How to Contribute
 
 - claim issue whichever you want.
