@@ -16,6 +16,9 @@ This repostory contain a simple example, codes in <strong>python</strong>. It wi
 2. [Get input in python](https://github.com/avsingh999/Python-for-beginner/blob/master/How%20to%20get%20input%20from%20user%20in%20python.md)
 3. [How to print in python](https://github.com/avsingh999/Python-for-beginner/blob/master/How%20to%20print%20in%20python.md)
 4. [How to add two lists in python](https://github.com/avsingh999/Python-for-beginner/blob/master/How%20to%20add%20two%20lists%20in%20python.md)
+5. [How to clone list in python](https://github.com/avsingh999/Python-for-beginner/blob/master/How%20to%20clone%20list%20in%20python.md)
+6. [How to count list element frequency in python](https://github.com/avsingh999/Python-for-beginner/blob/master/How%20to%20count%20list%20element%20frequency%20in%20python.md)
+7. [How to get input from user in python](https://github.com/avsingh999/Python-for-beginner/blob/master/How%20to%20get%20input%20from%20user%20in%20python.md)
 
 ## How to Contribute
 
