@@ -22,7 +22,7 @@ This repostory contain a simple example, codes in <strong>python</strong>. It wi
 - [How to get input from user in python](https://github.com/avsingh999/Python-for-beginner/blob/master/How%20to%20get%20input%20from%20user%20in%20python.md)
 - [for loop in python](https://github.com/mayankw/Python-for-beginner/blob/master/For%20loop%20in%20python.md)
 - [if else in python](https://github.com/avsingh999/Python-for-beginner/blob/master/if-else_python.md)
-
+- [Basic for loop in python](https://github.com/avsingh999/Python-for-beginner/blob/master/Basic_forloop_application.md)
 
 
 ## How to Contribute
