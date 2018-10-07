@@ -1,0 +1,22 @@
+#Decision making is required when we want to execute a code only if a certain condition is satisfied.
+
+#Simple if Statement :-
+
+if test expression:
+    statement(s)
+
+#If-Else Statement :-
+
+if test expression:
+    Body of if
+else:
+    Body of else
+
+#Elif (else if ladder):-
+
+if test expression:
+    Body of if
+elif test expression:
+    Body of elif
+else: 
+    Body of else
