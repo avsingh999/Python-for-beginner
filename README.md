@@ -15,7 +15,7 @@ This repostory contain a simple example, codes in <strong>python</strong>. It wi
 1. [hello world](https://github.com/avsingh999/Python-for-beginner/blob/master/Hello%20World)
 2. [Get input in python](https://github.com/avsingh999/Python-for-beginner/blob/master/How%20to%20get%20input%20from%20user%20in%20python.md)
 3. [How to print in python](https://github.com/avsingh999/Python-for-beginner/blob/master/How%20to%20print%20in%20python.md)
-
+4. [for loop in python](https://github.com/mayankw/Python-for-beginner/blob/master/For%20loop%20in%20python.md)
 ## How to Contribute
 
 - claim issue whichever you want.
