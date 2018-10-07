@@ -12,10 +12,14 @@ Python is widely used in Artificial Intelligence, Natural Language Generation, N
 ### Python-for-beginner
 This repostory contain a simple example, codes in <strong>python</strong>. It will help to beginner to learn <strong>python</strong> from begining.
 
-1. [hello world](https://github.com/avsingh999/Python-for-beginner/blob/master/Hello%20World)
-2. [Get input in python](https://github.com/avsingh999/Python-for-beginner/blob/master/How%20to%20get%20input%20from%20user%20in%20python.md)
-3. [How to print in python](https://github.com/avsingh999/Python-for-beginner/blob/master/How%20to%20print%20in%20python.md)
-- [string in python](https://github.com/avsingh999/Python-for-beginner/blob/master/String%20example%20in%20python.md)
+- [hello world](https://github.com/avsingh999/Python-for-beginner/blob/master/Hello%20World)
+- [Get input in python](https://github.com/avsingh999/Python-for-beginner/blob/master/How%20to%20get%20input%20from%20user%20in%20python.md)
+- [How to print in python](https://github.com/avsingh999/Python-for-beginner/blob/master/How%20to%20print%20in%20python.md)
+- [for loop in python](https://github.com/mayankw/Python-for-beginner/blob/master/For%20loop%20in%20python.md)
+- [if else in python](https://github.com/avsingh999/Python-for-beginner/blob/master/if-else_python.md)
+
+
+
 ## How to Contribute
 
 - claim issue whichever you want.
