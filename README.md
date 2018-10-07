@@ -30,7 +30,8 @@ This repostory contain a simple example, codes in <strong>python</strong>. It wi
 - [Find index of element in python list](https://github.com/avsingh999/Python-for-beginner/blob/master/find%20index%20of%20element%20in%20python%20list.md)
 - [How to open a text file in python](https://github.com/avsingh999/Python-for-beginner/blob/master/how%20to%20open%20a%20text%20file%20in%20python.md)
 - [Basic for loop in python](https://github.com/avsingh999/Python-for-beginner/blob/master/Basic_forloop_application.md)
-- [Basics of Dictionary in python](https://github.com/avsingh999/Python-for-beginner/blob/master/Basics%20of%20Dictionary.md)
+- [Basics of Dictionary in Python](https://github.com/avsingh999/Python-for-beginner/blob/master/Basics%20of%20Dictionary.md)
+
 
 ## How to Contribute
 
