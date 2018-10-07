@@ -17,7 +17,7 @@ This repostory contain a simple example, codes in <strong>python</strong>. It wi
 - [How to print in python](https://github.com/avsingh999/Python-for-beginner/blob/master/How%20to%20print%20in%20python.md)
 - [for loop in python](https://github.com/mayankw/Python-for-beginner/blob/master/For%20loop%20in%20python.md)
 - [if else in python](https://github.com/avsingh999/Python-for-beginner/blob/master/if-else_python.md)
-
+- [Basic for loop in python](https://github.com/avsingh999/Python-for-beginner/blob/master/Basic_forloop_application.md)
 
 
 ## How to Contribute
