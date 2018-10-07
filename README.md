@@ -10,7 +10,7 @@ Python is widely used in Artificial Intelligence, Natural Language Generation, N
 
 
 ### Python-for-beginner
-This repostory contain a simple https://github.com/avsingh999/Python-for-beginner/blob/master/How%20to%20get%20input%20from%20user%20in%20python.md)example, codes in <strong>python</strong>. It will help to beginner to learn <strong>python</strong> from begining.
+This repostory contain a simple example, codes in <strong>python</strong>. It will help to beginner to learn <strong>python</strong> from begining.
 
 1. [hello world](https://github.com/avsingh999/Python-for-beginner/blob/master/Hello%20World)
 2. [Get input in python](https://github.com/avsingh999/Python-for-beginner/blob/master/How%20to%20get%20input%20from%20user%20in%20python.md)
