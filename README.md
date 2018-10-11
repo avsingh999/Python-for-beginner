@@ -28,6 +28,7 @@ This repostory contain a simple example, codes in <strong>python</strong>. It wi
 - [String example in python](https://github.com/avsingh999/Python-for-beginner/blob/master/String%20example%20in%20python.md)
 - [Substring of string in Python](https://github.com/avsingh999/Python-for-beginner/blob/master/Substring%20of%20string%20in%20python.md)
 - [Find index of element in python list](https://github.com/avsingh999/Python-for-beginner/blob/master/find%20index%20of%20element%20in%20python%20list.md)
+- [Find count of char in python list](https://github.com/avsingh999/Python-for-beginner/blob/master/find_count_of_char_in_string.md)
 - [How to open a text file in python](https://github.com/avsingh999/Python-for-beginner/blob/master/how%20to%20open%20a%20text%20file%20in%20python.md)
 - [Basic for loop in python](https://github.com/avsingh999/Python-for-beginner/blob/master/Basic_forloop_application.md)
 - [Basics of Dictionary in Python](https://github.com/avsingh999/Python-for-beginner/blob/master/Basics%20of%20Dictionary.md)
