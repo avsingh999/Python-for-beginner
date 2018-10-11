@@ -43,17 +43,19 @@ This repostory contain a simple example, codes in <strong>python</strong>. It wi
 - create a pull request
 
 ## Help
-- go to this link it will help to you for contribution
+```
+go to this link it will help to you for contribution
+```
 
-https://www.pythonforbeginners.com/
+- https://www.pythonforbeginners.com/
 
-https://www.programiz.com/python-programming
+- https://www.programiz.com/python-programming
 
-https://www.guru99.com/python-tutorials.html
+- https://www.guru99.com/python-tutorials.html
 
 ## Github tutorial
 
-https://guides.github.com/activities/hello-world/
+- https://guides.github.com/activities/hello-world/
 
 ### Avkaran singh
 
