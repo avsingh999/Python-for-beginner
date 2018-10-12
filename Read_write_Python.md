@@ -8,7 +8,8 @@ data=file.read()
 ```
 
 ## Using this method you can read encoded files and save the file data in list
-```with open("enter your file_name","r",encoding='UTF8') as title:
+```
+with open("enter your file_name","r",encoding='UTF8') as title:
         title=title.readlines() 
 ```
 
