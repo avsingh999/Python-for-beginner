@@ -14,6 +14,7 @@ This repostory contain a simple example, codes in <strong>python</strong>. It wi
 
 
 - [hello world](https://github.com/avsingh999/Python-for-beginner/blob/master/Hello%20World)
+- [Read and Write a file in python](https://github.com/avsingh999/Python-for-beginner/blob/master/Read_write_Python.md)
 - [Variables in Python](https://github.com/avsingh999/Python-for-beginner/blob/master/variables_in_python.md)
 - [Get input in python](https://github.com/avsingh999/Python-for-beginner/blob/master/How%20to%20get%20input%20from%20user%20in%20python.md)
 - [How to print in python](https://github.com/avsingh999/Python-for-beginner/blob/master/How%20to%20print%20in%20python.md)
