@@ -34,7 +34,7 @@ This repostory contain a simple example, codes in <strong>python</strong>. It wi
 - [Basic for loop in python](https://github.com/avsingh999/Python-for-beginner/blob/master/Basic_forloop_application.md)
 - [Basics of Dictionary in Python](https://github.com/avsingh999/Python-for-beginner/blob/master/Basics%20of%20Dictionary.md)
 - [While loop in python](https://github.com/avsingh999/Python-for-beginner/blob/master/while_loop_in_python.md)
-
+- [Heap Sort in python](https://github.com/avsingh999/Python-for-beginner/blob/master/heap%20sort%20in%20python.md)
 
 ## How to Contribute
 
