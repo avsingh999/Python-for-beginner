@@ -1,3 +1,3 @@
-:heart: Thank you for you pr :heart:
+:heart: Thank you :heart:
 Please add issue number
 fix #00
