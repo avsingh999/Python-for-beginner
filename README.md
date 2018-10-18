@@ -48,7 +48,7 @@ This repostory contain a simple example, codes in <strong>python</strong>. It wi
 - [while loop in python](https://github.com/avsingh999/Python-for-beginner/blob/master/while%20loop%20in%20python.md)
 - [while_loop_in_python](https://github.com/avsingh999/Python-for-beginner/blob/master/while_loop_in_python.md)
 
-### Alorithms
+### Algorithm
 - [bubble sort in python](https://github.com/avsingh999/Python-for-beginner/blob/master/bubble%20sort%20in%20python.md)
 - [heap sort in python](https://github.com/avsingh999/Python-for-beginner/blob/master/heap%20sort%20in%20python.md)
 - [insertion sort in python](https://github.com/avsingh999/Python-for-beginner/blob/master/insertion%20sort%20in%20python.md)
