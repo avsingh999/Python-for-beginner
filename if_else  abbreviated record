@@ -1,0 +1,22 @@
+## Python 3.x
+An example of how to write an if/else construct
+
+Next instruction:
+
+```python
+if X:
+    A = Y
+else:
+    A = Z
+```
+This will give the output as follows:
+> True
+
+Short, but, nevertheless, occupies the whole 4 lines. 
+Especially for such cases, an if / else expression was invented:
+
+```python
+A = Y if X else Z
+```
+
+In this instruction, the interpreter will execute the expression Y, if X is true, otherwise the expression Z will be executed.
