@@ -1,8 +1,11 @@
 ## Python print()
 
+    print("Python")
+
 ## The full syntax of print() is:
 
-print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
+    print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
+    
 ## print() Parameters
 ##objects - object to the printed. * indicates that there may be more than one object
 ##sep - objects are separated by sep. Default value: ' '
