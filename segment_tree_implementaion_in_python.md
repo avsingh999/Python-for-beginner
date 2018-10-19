@@ -73,8 +73,8 @@ To make a query() on the Segment Tree,
 ```  
 
 The Segment Tree of array A of size 7 will look like :  
-![image](https://he-s3.s3.amazonaws.com/media/uploads/a0c7f90.jpg)  
-![image](https://he-s3.s3.amazonaws.com/media/uploads/aad673e.jpg)  
+![image](https://he-s3.s3.amazonaws.com/media/uploads/a0c7f90.jpg)   
+![image](https://he-s3.s3.amazonaws.com/media/uploads/aad673e.jpg)   
 
 **Take an example.**  Given an array A of size N and some queries.  
 There are two types of queries:  
