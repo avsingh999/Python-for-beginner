@@ -35,4 +35,67 @@ The number of internal nodes is N−1. So, a total number of nodes are 2N−1.
 **Update** : To update the element of the array A and reflect the corresponding change in the Segment tree.  
 **Query** : In this operation we can query on an interval or segment and return the answer to the problem  
 (say minimum/maximum/summation in the particular segment).  
+<hr>  
+### Implementation of a segment tree in python
+
+Since a Segment Tree is a binary tree, a simple linear array can be used to represent the Segment Tree.  
+Before building the Segment Tree, one must figure what needs to be stored in the Segment Tree's node?. 
+For example, if the question is to find the sum of all the elements in an array from indices *L to R*  
+,then at each node (except leaf nodes) the sum of its children nodes is stored.  
+
+A Segment Tree can be built using recursion (bottom-up approach ).  
+```
+-> Start with the leaves and go up to the root and update the corresponding changes in the nodes  
+-> that are in the path from leaves to root.  
+-> Leaves represent a single element.  
+-> In each step, the data of two children nodes are used to form an internal parent node.  
+-> Each internal node will represent a union of its children’s intervals.  
+-> Merging may be different for different questions.  
+-> So, recursion will end up at the root node which will represent the whole array.  
+```  
+
+For update(). 
+```
+-> Search the leaf that contains the element to update.  
+-> This can be done by going to either on the left child or the right child depending  
+   on the interval which contains the element.  
+-> Once the leaf is found, it is updated and again use the bottom-up approach to update the  
+   corresponding change in the path from that leaf to the root.  
+```   
+
+To make a query() on the Segment Tree,  
+```
+-> Select a range from L to R (which is usually given in the question).  
+-> Recurse on the tree starting from the root and check if the interval  
+   represented by the node is completely in the range from L to R
+   If the interval represented by a node is completely in the range from L to R
+   return that node’s value.  
+```  
+
+The Segment Tree of array A of size 7 will look like :  
+![image](https://he-s3.s3.amazonaws.com/media/uploads/a0c7f90.jpg)  
+![image](https://he-s3.s3.amazonaws.com/media/uploads/aad673e.jpg)  
+
+**Take an example.**  Given an array A of size N and some queries.  
+There are two types of queries:  
+Update: Given idx and val, update array element A[idx] as A[idx] = A[idx]+val  
+Query: Given l and r return the value of A[l] + A[l+1] + A[l+2] + … + A[r−1] + A[r]   
+such that 0 ≤ l ≤ r <N  
+Queries and Updates can be in any order.  
+
+*Naive Algorithm:*  
+This is the most basic approach. For every query, run a loop from l to r and calculate the sum of all the elements.  
+So each query will take O(N) time.  
+A[idx] += val will update the value of the element. Each update will take O(1).  
+
+This algorithm is good if the number of queries are very low compared to updates in the array.  
+
+*Using Segment Tree:*  
+First, figure what needs to be stored in the Segment Tree's node.  
+The question asks for summation in the interval from l to r, so in each node,  
+sum of all the elements in that interval represented by the node.  
+Next, build the Segment Tree.  
+The implementation with comments below explains the building process.  
+
+
 
