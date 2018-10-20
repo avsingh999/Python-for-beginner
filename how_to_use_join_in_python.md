@@ -1,4 +1,5 @@
 # How to Use join in Python
+
 Join in Python has the format 
 ``string.join(sequence,[,sep])``
 
@@ -8,7 +9,7 @@ sequence which will be either a list or a tuple of strings.
 The following function shows an example of a function that takes a 
 sequence and seperator and concatenates them using **join** method
 
-```
+```python
 def joinSequenceSequence(sequence,sep):
 
     print(sep.join(sequence))
@@ -17,6 +18,7 @@ def joinSequenceSequence(sequence,sep):
 ## Results
 
 Calling the method as follows gives the result **1-2-3-4-5**
-```
+
+```python
 joinSequenceSequence(["1","2","3","4","5"],"-")
 ```

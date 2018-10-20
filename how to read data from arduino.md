@@ -1,3 +1,4 @@
+```python
 import serial
 import csv
 import re
@@ -136,4 +137,4 @@ print "Plotting data..."
 #simple_plot(filename, (0,1,2), ['time (s)', 'voltage1', 'voltage2'])
 #simple_plot(filename, (0,1), ['time (s)', 'voltage1'])
 plot_csv(filename, gen_col_list(num_signals))
-
+```

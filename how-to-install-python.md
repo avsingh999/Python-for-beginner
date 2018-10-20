@@ -96,5 +96,3 @@ Assuming everything went well and you saw the output from Pip in your command pr
 You just installed Python on your system, and you’re all set to continue with the next section in this tutorial.
 
 Cheers :100:
-
-

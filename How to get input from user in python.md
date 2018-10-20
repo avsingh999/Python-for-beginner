@@ -2,29 +2,31 @@
 
 Function to save a user's response.
 
-### Syntax
-```
+## Syntax
+
+```python
 input(prompt)
 ```
 
-### Function return
+## Function return
 
 The input function returns the string written by the user.
 
-### Function parameter
+## Function parameter
 
 The function can receive a prompt parameter to write a message before the input
 
-### Examples:
+## Examples:
 
 1. Getting the user's name:
-```
+
+```python
 name = input('What is your name? ')
 ```
 
 3. Getting the user's age:
 
-```
+```python
 age = int(input('How old are you? '))
 ```
 

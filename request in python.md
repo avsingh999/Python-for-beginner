@@ -1,8 +1,13 @@
 ### Library Required
+
 We will be using Requests library as it is concise and easy to use. Install it using
-`pip install requests`
+
+```sh
+pip install requests
+```
 
 ## A Simple Example
+
 ```python
 import requests
 
@@ -14,6 +19,7 @@ We create an object `r` which will store the request-response. `requests.get` me
 Use `r.status_code` to see the status code.
 
 ## Post request example
+
 ```python
 import requests
  
@@ -25,5 +31,6 @@ print(r.json())
 data = r.json()
 print(data['form'])
 ```
+
 The above example sends a post request to `httpbin`. `payload` is the data that we want to send in the post request. `r.json()` prints the whole response message, while `data['form']` prints the data that we sent in the payload.
 

@@ -1,14 +1,17 @@
 # Segment Tree (Sum of given range)
 
 ## Description
+
 Segment Tree is a basically a binary tree used for storing the intervals or segments. Each node in the Segment Tree represents an interval.
+
 ## Implementation
+
 Since a Segment Tree is a binary tree, a simple linear array can be used to represent the Segment Tree. 
 A Segment Tree can be built using recursion (bottom-up approach ).
 Following is the implementation of segment tree. The program implements construction of segment tree for any given array. It also implements query operation.
 
 ## Code
-
+```python
 	tree = [-1] * 100
     arr = [1, 3, 5, 7, 9, 11]
 
@@ -55,5 +58,6 @@ Following is the implementation of segment tree. The program implements construc
     # Print sum of values in array from index 2 to 5 
     print("Sum of values in given range = ", getSum(1, 0, 5, 2, 5))
     # outputs 32
+```
 
 __Time Complexity: O(N)__

@@ -5,7 +5,7 @@
 
 #### Syntax
 
-```
+```python
 map(fun, iter)
 ```
 
@@ -19,13 +19,11 @@ iter : It is a iterable which is to be mapped.
 
 ## Example 
 
- Calculate the length of each word in the tuple:
+Calculate the length of each word in the tuple:
  
- ```python
+```python
 def myfunc(n):
   return len(n)
-
-
 
 x = map(myfunc, ('apple', 'banana', 'cherry'))
 
@@ -33,4 +31,5 @@ print(list(x))
 ```
 
 #### Output
+
 [5, 6, 6]

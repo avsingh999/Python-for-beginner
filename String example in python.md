@@ -3,8 +3,8 @@
 String is sequence of Unicode characters. We can use single quotes or double quotes to represent strings. Multi-line strings can be denoted using triple quotes, ''' or """.
 
 ```python
->>> s = "This is a string"
->>> s = '''a multiline
+s = "This is a string"
+s = '''a multiline
 ```
 
 Like list and tuple, slicing operator [] can be used with string. Strings are immutable.

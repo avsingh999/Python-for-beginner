@@ -1,6 +1,8 @@
 # Python program for implementation of Insertion Sort 
   
 # Function to do insertion sort 
+
+```python
 def insertionSort(nlist):
    for index in range(1,len(nlist)):
 
@@ -16,3 +18,4 @@ def insertionSort(nlist):
 nlist = [14,46,43,27,57,41,45,21,70]
 insertionSort(nlist)
 print(nlist)
+```

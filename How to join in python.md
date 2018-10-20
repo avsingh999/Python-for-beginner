@@ -1,6 +1,7 @@
 # How to join in python
 
 A list can be joined using together as a string using the stynax:
+
 ```python
 a_list = [1,2,3]
 a_string = " ".join(a_list)
@@ -8,7 +9,8 @@ print("A string:", a_string)
 ```
 
 Which will output:
-```
+
+```sh
 A string: 1 2 3
 ```
 
