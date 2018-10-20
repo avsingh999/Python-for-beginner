@@ -1,0 +1,11 @@
+#Python Code that Displays Addition, Substraction, Division and Multiplication of 2 numbers
+a = 10
+b = 5
+sum = a + b
+sub = a-b
+div = a/b
+mul = a*b
+print 'Addition of ',a ,'and' ,b ,'is :',sum
+print 'Substraction of ',a ,'and' ,b ,'is :',sub
+print 'Division of ',a ,'and' ,b ,'is :',div
+print 'Multiplication of ',a ,'and' ,b ,'is :',mul
