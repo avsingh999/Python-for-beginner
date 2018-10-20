@@ -1,23 +1,25 @@
-# find index of element in python list
+# Find index of element in python list
 
-In simple terms, index() method finds the given element in a list and returns its position.
+In simple terms, `index()` method finds the given element in a list and returns its position.
 
-However, if the same element is present more than once, index() method returns its smallest/first position.
+However, if the same element is present more than once, `index()` method returns its smallest/first position.
 
-**Note**: Index in Python starts from 0 not 1.
+**Note**: Index in Python starts from `0` not `1`.
 
-The syntax of index() method for list is:
+The syntax of `index()` method for list is:
+
 ```python
 list.index(element)
 ```
 
-# index() Parameters
+# `index()` Parameters
+
 The index method takes a single argument:
 * **element** - element that is to be searched.
-* 
 
-# Return value from index()
-The index() method returns the index of the element in the list.
+# Return value from `index()`
+
+The `index()` method returns the index of the element in the list.
 
 If not found, it raises a ValueError exception indicating the element is not in the list.
 

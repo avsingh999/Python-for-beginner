@@ -11,7 +11,7 @@ of all the elements in an array from indices L to R.
 
 These problems can be easily solved with one of the most versatile data structures, Segment Tree.  
 
-### What is Segment Tree ?  
+### What is Segment Tree?  
 
 Segment Tree is a basically a binary tree used for storing the intervals or segments.  
 Each node in the Segment Tree represents an interval.  
@@ -55,6 +55,7 @@ A Segment Tree can be built using recursion (bottom-up approach ).
 ```  
 
 For update(). 
+
 ```
 -> Search the leaf that contains the element to update.  
 -> This can be done by going to either on the left child or the right child depending  
@@ -98,7 +99,8 @@ Next, build the Segment Tree.
 The implementation with comments below explains the building process.  
 
 **Building segment tree**  
-```
+
+```python
    def build(node, start, end):
        if start == end:
            tree[node] = A[start]    # Leaf node will have a single element
@@ -112,7 +114,7 @@ The implementation with comments below explains the building process.
 <hr>  
 
 **Updating segment tree**  
-```
+```python
    def update(node, start, end, idx, val):
        if start == end:          # Leaf node
            A[idx] += val
@@ -131,7 +133,7 @@ The implementation with comments below explains the building process.
 <hr>  
 
 **Querying a segment tree**  
-```
+```python
 int query(int node, int start, int end, int l, int r)
 {
     if(r < start or end < l)
@@ -150,7 +152,8 @@ int query(int node, int start, int end, int l, int r)
     int p2 = query(2*node+1, mid+1, end, l, r);
     return (p1 + p2);
 }
-```  
+```
+
 **Time Complexity:** O(logn)  
 
 

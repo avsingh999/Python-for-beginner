@@ -1,8 +1,10 @@
 ## Introduction
+
 This is an example with a simple Graphical User Interface (GUI) written in Python,
 using tkinter.
 
 ## About tkinter
+
 Tkinter is a standard Python interface with the Tk GUI toolkit. For more information and full
 library documentation, go [here](https://docs.python.org/3/library/tkinter.html).
 

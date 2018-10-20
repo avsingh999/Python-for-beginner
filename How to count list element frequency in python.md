@@ -1,19 +1,22 @@
 # How to count list element frequency in python
 
-In simple terms, count() method counts how many times an element has occurred in a list and returns it.
+In simple terms, `count()` method counts how many times an element has occurred in a list and returns it.
 
-The syntax of count() method is:
+The syntax of `count()` method is:
 
 ```python
 list.count(element)
 ```
 
-# count() Parameters
-The count() method takes a single argument:
+# `count()` Parameters
+
+The `count()` method takes a single argument:
+
 * **element** - element whose count is to be found.
 
-# Return value from count()
-The count() method returns the number of occurrences of an element in a list.
+# Return value from `count()`
+
+The `count()` method returns the number of occurrences of an element in a list.
 
 # Example
 

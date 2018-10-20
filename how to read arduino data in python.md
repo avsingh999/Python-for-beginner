@@ -18,21 +18,28 @@ If running on Jython: “Java Communications” (JavaComm) or compatible extensi
 **From PyPI**
 
 - Consider upgrading pip to pip version 18.1 is available:
-```
+
+```sh
    python -m pip install --upgrade pip
 ```
+
 - Install PySerial to use Python with Arduino
-```
+
+```sh
    python -m pip install PySerial
 ```
 
 **From Conda**
+
 - pySerial can be installed from Conda:
-```
+
+```sh
 conda install pyserial
+```
 
 or
 
+```
 conda install -c conda-forge pyserial
 ```
 
@@ -42,21 +49,29 @@ conda install -c conda-forge pyserial
 ```
 
 ## Script Python
+
 -Import serial
+
 ```python
 import serial
 ```
+
 -Establish the port in which the arduino is connected
+
 ```python
 PuertoSerie =serial.Serial('COM4', 9600)
 ```
+
 -In a bucle wait for the response (data) sent from the arduino
+
 ```python
 while True:
 	sArduino = PuertoSerie.readline()
 	print (sArduino)
 ```
+
 -Script <code> .py </code>:
+
 ```python
 import serial
 PuertoSerie =serial.Serial('COM4', 9600)
@@ -66,25 +81,34 @@ while True:
 ```
 
 ## Script Arduino
+
 -Establish a variable that is sending the data:
+
 ```ardunio
 int sensorValue = 0;
 ```
+
 -In the setup () the serial port is initialized in this case in 9600 (same as in the Python script)
+
 ```ardunio
 void setup(){
   Serial.begin(9600);
 }
 ```
+
 -In loop () the analog input is received (in this example) by port A0.
+
 -The value of the sensor that will be sent to Python is written to the serial port
+
 ```ardunio
 void loop(){
   sensorValue = analogRead(A0);
   Serial.println(sensorValue);
 }
 ```
-- Script <code> .ino </code>:
+
+- Script `.ino`:
+
 ```ardunio
 int sensorValue = 0;
 void setup(){
@@ -100,10 +124,12 @@ void loop(){
 1. Make the connection of the sensors on the arduino board
 2. Compile and upload arduino script to the Arduino card
 3. Running the Python script in console
+
 ```shell
 rute\python name-project.py
 ```
 ## Conexion with a example
+
 In the next video show the implementig the example:
 https://youtu.be/0e9yuELxgFU.
 

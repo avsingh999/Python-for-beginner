@@ -1,9 +1,10 @@
-## Counting characters in a string
+# Counting characters in a string
+
 ```python
 s = "string"
 cnt = 0
 for i in s:
-  cnt += 1
+    cnt += 1
 print(cnt)
 ```
 

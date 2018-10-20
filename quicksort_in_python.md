@@ -20,16 +20,22 @@ Going to sort a list of 9 integers in the format [17,41,5,22,54,6,29,3,13] in Py
 ## Code:
 
 ### list user input (D) and then call the recursive quick-sort2
+
+```python
 def quick_sort(D) :
 	quick_sort2(D, 0, len(D) - 1)
+```
 
+```python
 ### recursive function
 def quick_sort2 (D, low, high):
 	if low < high:    #more than one item to be sorted
 		p = partition(D, low, high)     # return the pivot around which where we partitioned the list
 		quick_sort2(D, low, p - 1)      # sort left partition
 		quick_sort2(D, p + 1, high)     # sort right partition
+```
 
+```python
 ### getting the pivot
 def get_pivot(D, low, high):
 	mid = (high + low) // 2
@@ -40,7 +46,9 @@ def get_pivot(D, low, high):
 	elif D[low] < D[high]:
 		pivot = low
 	return pivot
+```
 
+```python
 ### partition function
 def partition(D, low, high):
 	pivotIndex = get_pivot(D, low, high)
@@ -55,5 +63,4 @@ def partition(D, low, high):
 	D[low], D[border] = D[border], D[low]
 
 	return (border)     # return the index for the pivot
-
-
+```

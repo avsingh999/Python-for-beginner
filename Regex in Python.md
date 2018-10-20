@@ -3,7 +3,8 @@
 #### Regular expressions are used for pattern matching in a string. They provide a general way for matching patters for finding valid phone numbers, email addresses which adhere to certain format. This is a tedious task to do using normal search functionalities. Regular expressions are implemented internally using finite automata. 
 
 
-### re.search(pattern, string) 
+### re.search(pattern, string)
+
 matches first occurance of pattern in the string and returns match object containing index of match and the matched string
 
 ```python
@@ -12,6 +13,7 @@ import re  #import regex module
 #appending r before string makes it raw string
 print(re.search('n', r'ba\n'))
 ```
+
 running above program ouput will be : 
 
 ```bash
@@ -46,6 +48,7 @@ ab
 ```
 
 ### re.match(pattern, string) 
+
 matches pattern at the beginning of the string (prefix matching) and returns the match object
 
 ```python
@@ -60,6 +63,7 @@ running above program ouput will be :
 ```
 
 ### re.findall(pattern, string) 
+
 finds all occurances of pattern in string and returns list of matched strings
 
 ```python
@@ -67,6 +71,7 @@ import re
 
 print(re.findall('[0-9]+', '12ad123cd'))
 ```
+
 ##### running above program ouput will be :
 
 ```bash
@@ -74,6 +79,7 @@ print(re.findall('[0-9]+', '12ad123cd'))
 ```
 
 ### re.sub(pattern, repla, string)
+
 replace all matches in string with repla and returns modified string
 
 ```python
@@ -88,9 +94,9 @@ print(re.sub('ab', 'cd', 'habcabc'))
 hcdccdc
 ```
 
-### re.compile(pattern) 
-compiles pattern into returns regular expression object. This object can be used for matching using match(), search() and other methods.
+### re.compile(pattern)
 
+compiles pattern into returns regular expression object. This object can be used for matching using match(), search() and other methods.
 
 ```python
 import re 
@@ -110,7 +116,6 @@ running above program ouput will be :
 ##### ? is used to match 0 or 1 occurance of preceding character
 ##### + is used to match 1 or more occurances of preceding character
 ##### {x,y} is used to match atleast x occurances and atmost y occurances of preceding character
-
 
 ```python
 import re
@@ -137,7 +142,6 @@ running above program ouput will be :
 ##### ^ is used to exclude character from matching
 ##### . matches any character except newline character
 
-
 ```python
 import re
 
@@ -160,7 +164,6 @@ running above program ouput will be :
 ##### \W matches character other than alpha numeric character, equivalent to [^a-zA-Z0-9_]
 ##### \D matches any non decimal character, equivalent to [^0-9]
 ##### \s matches any whitespace character
-
 
 ```python
 import re
