@@ -1,8 +1,6 @@
-
 # Introducing the DataFrame and Cleaning NaN values
 
 Import and alias Pandas:
-
 
 ```python
 import pandas as pd
@@ -23,29 +21,13 @@ Next up, rename the columns so that they are _similar_ to the column definitions
 df.columns=['RK', 'PLAYER','TEAM','GP','G','A','PTS','+/-','PIM','PTS/G','SOG','PCT','GWG','\G','\A','+G','+A']
 ```
 
-
 ```python
 type(df)
 df.head()
 ```
 
-
-
-
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -175,7 +157,6 @@ df.head()
 </div>
 
 
-
 Convert argument to a numeric type.
 * If ‘raise’, then invalid parsing will raise an exception
 * If ‘coerce’, then invalid parsing will be set as NaN
@@ -220,23 +201,7 @@ del df['RK']
 df.head()
 ```
 
-
-
-
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -359,8 +324,6 @@ df.head()
 </table>
 </div>
 
-
-
 Make sure there are no holes in your index by resetting it. There is an example of this in the reading material. By the way, drop the original index.
 
 
@@ -369,23 +332,7 @@ df.reset_index()
 df.head()
 ```
 
-
-
-
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -519,9 +466,7 @@ Check the data type of all columns, and ensure those that should be numeric are 
 df.dtypes
 ```
 
-
-
-
+```
     PLAYER     object
     TEAM       object
     GP        float64
@@ -540,7 +485,7 @@ df.dtypes
     +A         object
     dtype: object
 
-
+```
 
 Convert argument to a numeric type
 
@@ -560,22 +505,7 @@ df.head()
 ```
 
 
-
-
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -698,16 +628,11 @@ df.head()
 </table>
 </div>
 
-
-
-
 ```python
 df.dtypes
 ```
 
-
-
-
+```
     PLAYER     object
     TEAM       object
     GP        float64
@@ -726,7 +651,7 @@ df.dtypes
     +A          int64
     dtype: object
 
-
+```
 
 Try use your_data_frame['your_column'].unique() or equally, your_data_frame.your_column.unique() to see the unique values of each column and identify the rogue values.
 
@@ -737,39 +662,21 @@ If you find any value that should be properly encoded to NaNs, you can convert t
 df.PCT.unique()
 ```
 
-
-
-
+```
     array([15. , 17.6, 14. , 13.7, 17.5, 13. ,  9.4, 11.7, 13.8, 12.7, 18.7,
            12.9,  8.8, 14.4, 16.3, 10.6, 11.8, 14.2, 14.9, 23.4, 11.9, 10.5,
            17.4,  9.5, 10.8, 10.1, 12.4, 18.3, 13.3, 14.8, 13.2, 11.3,  6.3])
 
-
+```
 
 Figure out which indexing method you would need to use in order to index your dataframe with: [2:4, 'col3']. Finally, display the results:
-
 
 ```python
 df.iloc[2:4, [3]]
 ```
 
-
-
-
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -789,5 +696,3 @@ df.iloc[2:4, [3]]
   </tbody>
 </table>
 </div>
-
-
