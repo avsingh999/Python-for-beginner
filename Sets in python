@@ -1,0 +1,24 @@
+To create a set in python, you can use the set() function.
+  example=[1,2,2,3,4,5,5,5,5,5]
+  x= set(example)
+  print(x)
+    #{1, 2, 3, 4, 5}
+  x.pop()
+    #1
+  x.pop()
+    #2
+  print(x)
+    #{3,4,5}
+    
+>>> example=[1,2,2,3,4,5,5,5,5,5,0]
+>>> x=set(example)
+>>> print(x)
+{0, 1, 2, 3, 4, 5}
+>>> x.pop()
+0
+>>> print(x)
+{1, 2, 3, 4, 5}
+
+>>> x.discard(4)
+>>> print(x)
+{1, 2, 3, 5}
