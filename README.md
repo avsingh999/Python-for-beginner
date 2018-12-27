@@ -1,5 +1,10 @@
 # python
 
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/Naereen/)
+[![opensource](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/JbossOutreach/certificate-generator-front) 
+![license](https://img.shields.io/apm/l/vim-mode.svg?style=popout)
+
+
 <p align="center">
   <img src="https://www.bytelion.com/wp-content/uploads/2015/12/pythonlogo.jpg"/>
 </p>
