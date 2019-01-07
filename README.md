@@ -90,4 +90,6 @@ go to this link it will help to you for contribution
 
 thank you
 
-:heart: :heart: :heart: # python
+<p align='center'>:heart: :heart: :heart:</p>
+<p align='center'> ** python ** </p>
+<p align='center'>Add info what you know in python and update any algorithm or any other</p>
