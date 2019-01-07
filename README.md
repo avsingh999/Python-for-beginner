@@ -6,7 +6,7 @@
 
 
 <p align="center">
-  <img  src="https://www.bytelion.com/wp-content/uploads/2015/12/pythonlogo.jpg"/>
+  <img width='420px' src="https://www.bytelion.com/wp-content/uploads/2015/12/pythonlogo.jpg"/>
 </p>
 
 
