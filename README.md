@@ -38,6 +38,7 @@ This repostory contain a simple example, codes in <strong>python</strong>. It wi
 - [String example in python](https://github.com/avsingh999/Python-for-beginner/blob/master/String%20example%20in%20python.md)
 - [Substring of string in python](https://github.com/avsingh999/Python-for-beginner/blob/master/Substring%20of%20string%20in%20python.md)
 - [find index of element in python list](https://github.com/avsingh999/Python-for-beginner/blob/master/find%20index%20of%20element%20in%20python%20list.md)
+- [How to catch exceptions in python](https://github.com/avsingh999/Python-for-beginner/blob/master/how%20to%20catch%20exceptions%20in%20python.md)
 - [find_count_of_char_in_string](https://github.com/avsingh999/Python-for-beginner/blob/master/find_count_of_char_in_string.md)
 - [find_index_of_element_in_python](https://github.com/avsingh999/Python-for-beginner/blob/master/find_index_of_element_in_python.md)
 - [hello world loop in python](https://github.com/avsingh999/Python-for-beginner/blob/master/hello%20world%20loop%20in%20python.md)
