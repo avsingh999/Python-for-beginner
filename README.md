@@ -63,9 +63,9 @@ This repostory contain a simple example, codes in <strong>python</strong>. It wi
 - [segment tree](https://github.com/avsingh999/Python-for-beginner/blob/master/segment_tree_implementaion_in_python.md)  
 ## How to Contribute
 
-- claim issue whichever you want.
-- search a example or code in ruby who better solution for that issue
-- create file filename should be title of the issue and paste a code, example of that issue
+- claim any issue whichever you want.
+- search an example or code in ruby who better solution for that issue
+- created file filename should be title of the issue and paste a code, example of that issue
 - create a pull request
 
 ## Help
