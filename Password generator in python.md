@@ -1,5 +1,7 @@
+```python
 # password generator in python
 # It generate strong password of 8 character long
+
 from string import punctuation   # punctuation contains all special characters
 import string
 import random as rd
@@ -30,4 +32,4 @@ class PasswordGenerator:
 
 password = PasswordGenerator()
 print(password.password())
-
+```
