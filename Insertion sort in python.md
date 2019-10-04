@@ -1,27 +1,21 @@
-# Insertion Sort
-
-## Description
-
-Insertion sort iterates, consuming one input element each repetition, and growing a sorted output list. At each iteration, insertion sort removes one element from the input data, finds the location it belongs within the sorted list, and inserts it there. It repeats until no input elements remain.
-
-__Worst Case Complexity: n^2^__
-
-## Code
+# Python program for implementation of Insertion Sort 
+  
+# Function to do insertion sort 
 
 ```python
-def insertionSort(alist):
-	for index in range(1,len(alist)):
+def insertionSort(nlist):
+   for index in range(1,len(nlist)):
 
-		currentvalue = alist[index]
-		position = index
+     currentvalue = nlist[index]
+     position = index
 
-		while position>0 and alist[position-1]>currentvalue:
-			alist[position]=alist[position-1]
-			position = position-1
+     while position>0 and nlist[position-1]>currentvalue:
+         nlist[position]=nlist[position-1]
+         position = position-1
 
-		alist[position]=currentvalue
+     nlist[position]=currentvalue
 
-alist = [54,26,93,17,77,31,44,55,20]
-insertionSort(alist)
-print(alist)
+nlist = [14,46,43,27,57,41,45,21,70]
+insertionSort(nlist)
+print(nlist)
 ```

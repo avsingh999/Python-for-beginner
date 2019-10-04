@@ -10,12 +10,12 @@
 </p>
 
 
-Python is an object-oriented programming language created by Guido Rossum in 1989. It is ideally designed for rapid prototyping of complex applications. It has interfaces to many OS system calls and libraries and is extensible to C or C++. Many large companies use the Python programming language include NASA, Google, YouTube, BitTorrent, etc.
-Python is widely used in Artificial Intelligence, Natural Language Generation, Neural Networks and other advanced fields of Computer Science. Python had deep focus on code readability & this class will teach you python from basics.
+Python is an object-oriented programming language created by Guido Rossum in 1989. It is ideally designed for rapid prototyping of complex applications. It has interfaces to many OS system calls and libraries, and is extensible to C or C++. Many large companies use the Python programming language, including NASA, Google, YouTube, BitTorrent, etc.
+Python is widely used in Artificial Intelligence, Natural Language Generation, Neural Networks, and other advanced fields in Computer Science. Python has a deep focus on code readability & this class will teach you python from the basics.
 
 
 ### Python-for-beginner
-This repostory contain a simple example, codes in <strong>python</strong>. It will help to beginner to learn <strong>python</strong> from begining.
+This repostory contains simple examples of code in <strong>python</strong>. It will help beginners learn <strong>python</strong> from the beginning.
 
 #### Getting Started
 - [Installing Python3](https://github.com/lalkanhaiya/Python-for-beginner/blob/master/how-to-install-python.md)
@@ -38,6 +38,7 @@ This repostory contain a simple example, codes in <strong>python</strong>. It wi
 - [String example in python](https://github.com/avsingh999/Python-for-beginner/blob/master/String%20example%20in%20python.md)
 - [Substring of string in python](https://github.com/avsingh999/Python-for-beginner/blob/master/Substring%20of%20string%20in%20python.md)
 - [find index of element in python list](https://github.com/avsingh999/Python-for-beginner/blob/master/find%20index%20of%20element%20in%20python%20list.md)
+- [How to catch exceptions in python](https://github.com/avsingh999/Python-for-beginner/blob/master/how%20to%20catch%20exceptions%20in%20python.md)
 - [find_count_of_char_in_string](https://github.com/avsingh999/Python-for-beginner/blob/master/find_count_of_char_in_string.md)
 - [find_index_of_element_in_python](https://github.com/avsingh999/Python-for-beginner/blob/master/find_index_of_element_in_python.md)
 - [hello world loop in python](https://github.com/avsingh999/Python-for-beginner/blob/master/hello%20world%20loop%20in%20python.md)
@@ -62,14 +63,14 @@ This repostory contain a simple example, codes in <strong>python</strong>. It wi
 - [segment tree](https://github.com/avsingh999/Python-for-beginner/blob/master/segment_tree_implementaion_in_python.md)  
 ## How to Contribute
 
-- claim issue whichever you want.
-- search a example or code in ruby who better solution for that issue
-- create file filename should be title of the issue and paste a code, example of that issue
+- claim whichever issue you want.
+- search for an example or code in another language (e.g. ruby) that would be a better solution for your issue
+- create file with the title of the issue as the filename, and paste some code showing an example of that issue
 - create a pull request
 
 ## Help
 ```
-go to this link it will help to you for contribution
+these links will help you with your contribution
 ```
 
 - https://www.pythonforbeginners.com/
