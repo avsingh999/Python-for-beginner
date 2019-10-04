@@ -15,7 +15,7 @@ Python is widely used in Artificial Intelligence, Natural Language Generation, N
 
 
 ### Python-for-beginner
-This repostory contains simple examples of code in <strong>python</strong>. It will help to beginner learn <strong>python</strong> from the begining.
+This repostory contains simple examples of code in <strong>python</strong>. It will help beginners learn <strong>python</strong> from the beginning.
 
 #### Getting Started
 - [Installing Python3](https://github.com/lalkanhaiya/Python-for-beginner/blob/master/how-to-install-python.md)
