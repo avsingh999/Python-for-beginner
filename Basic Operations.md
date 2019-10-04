@@ -1,4 +1,4 @@
-#Python Code that Displays Addition, Subtraction, Division and Multiplication of 2 numbers
+# Python Code that Displays Addition, Subtraction, Division and Multiplication of 2 numbers
 ## Initializing Variables `x` and `y` as `10` and `5` respectively
 ```python
 x = 10
