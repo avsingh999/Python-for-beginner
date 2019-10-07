@@ -1,0 +1,2 @@
+ourNumber = input("Enter a number: ")
+print(ourNumber + "... I have seen better.")
