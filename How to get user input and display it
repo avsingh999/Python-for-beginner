@@ -1,2 +1,11 @@
+ourNumber will hold the number given by the user.
+input() will wait for a user input.
+Inside the input () can be left blank but I like to add something to show the user.
+
+print() will display anything held within.
+When printing words use "" but for variables just use their name.
+
+
+
 ourNumber = input("Enter a number: ")
 print(ourNumber + "... I have seen better.")
