@@ -18,3 +18,11 @@ print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
 ##file - must be an object with write(string) method. If omitted it, sys.stdout will be used which prints objects on the screen.
 ##flush - If True, the stream is forcibly flushed. Default value: False
 ```
+
+## Python print() with variable
+There is multiple way to do it. One of them is using f-string.
+```python
+last_name = "Doe"
+first_name = "John"
+print(f"Hello. My name is {first_name} {last_name}.")
+```
