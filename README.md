@@ -60,7 +60,8 @@ This repostory contains simple examples of code in <strong>python</strong>. It w
 - [insertion sort in python](https://github.com/avsingh999/Python-for-beginner/blob/master/insertion%20sort%20in%20python.md)
 - [quick sort](https://github.com/lalkanhaiya/Python-for-beginner/blob/master/quicksort_in_python.md)
 - [mergesort](https://github.com/lalkanhaiya/Python-for-beginner/blob/master/merge_sort_in_python.py)
-- [segment tree](https://github.com/avsingh999/Python-for-beginner/blob/master/segment_tree_implementaion_in_python.md)  
+- [segment tree](https://github.com/avsingh999/Python-for-beginner/blob/master/segment_tree_implementaion_in_python.md) 
+- [sieve of eratosthenes]('https://github.com/anuragphadnis/Python-for-beginner/blob/master/SieveOfEratosthenes.py')
 ## How to Contribute
 
 - claim whichever issue you want.
