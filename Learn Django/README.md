@@ -124,6 +124,7 @@ same directory as 'manage.py' and enter the following command: </p>
 <br>
 <p>After running the server navigate to <a href="http://localhost:8000/">http://localhost:8000/</a>.You will see 
 'Hello World!' displayed on screen. The same hello world we defined in our 'index.html' file.</p>
+<p> You can find the source sode of the app we just created <a href="https://github.com/beingbiplov/Python-for-beginner/tree/learnDjango/Learn%20Django/hello_world">Here</a> </p>
 
 <p><strong>CONGRATULATIONS</strong>, you have created a basic functioning django web app.</p>
 
