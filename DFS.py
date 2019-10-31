@@ -54,4 +54,4 @@ g.addEdge(2, 3)
 g.addEdge(3, 3) 
 
 print("Following is DFS from (starting from vertex 2)") 
-g.DFS(2) 
+g.DFS(3) 
