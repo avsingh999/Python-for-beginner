@@ -1,0 +1,22 @@
+It's possible to write programs which can handle exceptions. Given below is an example, that asks the user for input until a valid integer has been entered, but it still allows the user to interrupt the program (using Ctrl-C or whatever the operating system supports); note that a user-generated interruption is signalled by raising the KeyboardInterrupt exception.
+
+>>> while True:
+        try:
+            x = int(input("Enter a number: "))
+            break
+        except ValueError:
+            print("That was an invalid number.  Please try again...")
+          
+The TRY statement works as follows:-
+
+~First, the statement(s) between the try and except keywords are executed.
+
+~If no exception occurs, the except clause is skipped and execution of the try statement is finished.
+
+~If an exception occurs during execution of the try clause, the rest of the clause is skipped. Then if its type matches the exception named after the except keyword, the except clause is executed, and then execution continues after the try statement.
+
+~If an exception occurs which does not match the exception named in the except clause, it is passed on to outer try statements; if no handler is found, it is an unhandled exception and execution stops with a message as shown above.
+
+There are other errors such as OSError,etc.
+
+source: docs.python.org

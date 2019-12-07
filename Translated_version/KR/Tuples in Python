@@ -1,0 +1,38 @@
+CREATING A TUPLE
+
+- Tuple having integers
+my_tuple = (1, 2, 3)
+print(my_tuple)  # Output: (1, 2, 3) 
+
+- Tuple with mixed datatypes
+my_tuple = (1, "Hello", 3.4)
+print(my_tuple)  # Output: (1, "Hello", 3.4)  
+
+- Tuple without using parentheses 
+my_tuple = 3, 4.6, "dog"
+print(my_tuple)   # Output: 3, 4.6, "dog" 
+
+INDEXING
+
+my_tuple = ('p','e','r','m','i','t')
+print(my_tuple[0])   # 'p' 
+print(my_tuple[5])   # 't'
+
+SLICING
+
+my_tuple = ('p','r','o','g','r','a','m','i','z')
+
+# elements 2nd to 4th
+# Output: ('r', 'o', 'g')
+print(my_tuple[1:4])
+
+# elements beginning to 2nd
+# Output: ('p', 'r')
+print(my_tuple[:-7])
+
+TUPLE METHODS
+
+my_tuple = ('a','p','p','l','e',)
+
+print(my_tuple.count('p'))  # Output: 2
+print(my_tuple.index('l'))  # Output: 3

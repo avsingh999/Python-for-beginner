@@ -2,8 +2,8 @@ import smtplib
 
 server=smtplib.SMTP("smtp.gmail.com",587)
 server.starttls()
-a=input("enter mail")
-b=input("enter password")
+a=input("메일을 입력하세요")
+b=input("비밀번호를 입력하세요")
 server.login('%s'%a,'%s'%b)
 
 server.sendmail('from_mail@gmail.com',
@@ -12,4 +12,4 @@ server.sendmail('from_mail@gmail.com',
 
 server.quit()
 
-print("email sent successfully")
+print("이메일을 성공적으로 보냈습니다.")
