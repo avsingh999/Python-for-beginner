@@ -1,0 +1,8 @@
+num = int(input("아무 숫자나 입력하세요.: "))
+flag = num%2
+if flag == 0:
+    print(num, "는 짝수입니다.")
+elif flag == 1:
+    print(num, "는 홀수입니다.")
+else:
+    print("에러, 유효하지 않은 입력")

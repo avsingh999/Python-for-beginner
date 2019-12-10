@@ -1,0 +1,6 @@
+# 0과 9 사이 무작위 숫자를 발생시키는 프로그램
+
+# random 모듈 가져오기
+import random
+
+print(random.randint(0,9))
