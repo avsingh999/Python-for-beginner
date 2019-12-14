@@ -1,13 +1,13 @@
-==> Open socket_server.py in first terminal
+==> 첫 번째 터미널에서 socket_server.py를 엽니 다
 
-Now, You will see that because of while loop your program is running continuously and waiting for any connections.
-In this program server can listen 5 connection
+이제 while 루프로 인해 프로그램이 계속 실행되고 연결을 기다리는 것을 알 수 있습니다.
+이 프로그램에서 서버는 5 개의 연결을 들을 수 있습니다
 
-==> Open socket_client.py in second terminal
+==> 두 번째 터미널에서 socket_client.py를여십시오.
 
-As soon as the client program run you will see message on server got a connection and at client thank you message will appeare.
+클라이언트 프로그램이 실행되자마자 서버에 연결되었다는 메시지를 볼 수 있고 클라이언트의 감사 메시지가 나타날 것입니다.
 
 
-Now, This is basic socket Programming you can learn more deep in this library by reading documentation link is bellow.
+자, 이것은 기본적인 소켓 프로그래밍입니다. 당신은이 링크를 통해 이 라이브러리에 대해 더 깊이 배울 수 있습니다.
 
 https://docs.python.org/3/library/socket.html

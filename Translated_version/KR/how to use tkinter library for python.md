@@ -1,8 +1,8 @@
-# How to use tkinter library for python 
-tkinter provides us with a variety of common GUI elements which we can use to build our interface – such as buttons, menus and various kinds of entry fields and display areas. 
+# Python에 tkinter 라이브러리를 사용하는 방법 
+tkinter는 버튼, 메뉴, 다양한 입력필드 및 디스플레이 영역과 같은 인터페이스를 구축하는데 사용할 수 있는 다양한 공통 GUI 요소를 제공합니다.
 
 ## Window
-Import the Tkinter package, we will create a window and set its title:
+Tkinter 패키지를 가져 오면 창을 만들고 제목을 설정합니다:
 
 ```python
 from tkinter import *
@@ -15,20 +15,20 @@ window.mainloop()
 ```
 
 **Size Window**
-Set the size of a window
+windiw의 크기를 정합니다.
 
 ```python
 window.geometry('350x200')
 ```
 
 ## Label
-Create a label widget
+label위젯 만들기
 
 ```python
 lbl = Label(window, text="Hello")
 ```
 
-Set its position in the form using the grid function with its location, in this way:
+다음과 같이 그리드 기능을 사용하여 장소에 위치를 설정하십시오:
 
 ```python
 lbl.grid(column=0, row=0)
@@ -36,7 +36,7 @@ lbl.grid(column=0, row=0)
 
 **Set label font size**
 
-Change font type
+폰트 종류 변경
 
 ```python
 lbl = Label(window, text="Hello", font=("Arial Bold", 24))
@@ -44,7 +44,7 @@ lbl = Label(window, text="Hello", font=("Arial Bold", 24))
 
 ## Button
 
-Add a button
+버튼을 추가합니다
 
 ```python
 btn = Button(window, text="Click Me")
@@ -54,8 +54,8 @@ btn.grid(column=1, row=0)
 
 ## Events
 
-Manage the event click of a button
-1. We will write the function that we need to execute when the button is clicked:
+버튼 클릭 이벤트 관리
+1. 버튼을 클릭 할 때 실행해야 할 기능을 작성합니다:
 
 ```python
 def clicked():
@@ -63,7 +63,7 @@ def clicked():
     lbl.configure(text="Button was clicked !!")
 ```
 
-Link the event to the button
+버튼에 이벤트를 연결합니다.
 
 ```python
 btn = Button(window, text="Click Me", command=clicked)
@@ -71,13 +71,13 @@ btn = Button(window, text="Click Me", command=clicked)
 
 ## Entry (Tkinter textbox)
 
-1. Create a text box using the Tkinter Entry class in this way:
+1. 이런 식으로 Tkinter Entry 클래스를 사용하여 텍스트 상자를 만듭니다:
 
 ```python
 txt = Entry(window,width=10)
 ```
 
-To use the entered text, it is saved by a function
+입력한 텍스트를 사용하려면, 다음과 같은 함수로 저장되어야 합니다.
 def clicked ()
 
 ```python
@@ -140,16 +140,16 @@ messagebox.showerror('Message title', 'Message content')
 
 ## SpinBox 
 
-A Spinbox widget and pass the parameters from_ and to to specify the range of numbers of the Spinbox.
+Spinbox 위젯으로 from_ 및 to 매개변수를 전달하여 Spinbox의 숫자범위를 지정합니다.
 
 
 ```python
 spin = Spinbox(window, from_=0, to=100, width=5)
 ```
 
-## Add a menu bar
+## 메뉴바 추가하기
 
-To add a menu bar, you can use the menu class:
+메뉴바를 추가하려면 메뉴클래스를 사용할 수 있습니다:
 
 ```python
 
@@ -162,11 +162,11 @@ menu.add_command(label='File')
 window.config(menu=menu)
 ```
 
-You can add the menu items, in any menu, with the add_cascade () function:
+add_cascade() 함수를 사용하여 메뉴에서 메뉴항목을 추가할 수 있습니다.
 
 ```python
 menu.add_cascade(label='File', menu=new_item)
 ```
 
 
-Thank you
+감사합니다

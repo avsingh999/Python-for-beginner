@@ -2,15 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\Translated_version",
-    "\\Translated_version\\KR",
-    "\\Translated_version\\KR\\algorithms",
-    "\\Translated_version\\KR\\Learn Django",
-    "\\Translated_version\\KR\\LearnWebWithFlask",
-    "\\Translated_version\\KR\\Learn_NumPy",
-    "\\Translated_version\\KR\\Python Date Time",
-    "\\Translated_version\\KR\\topics",
-    "\\Translated_version\\KR\\topics\\read-write-JSON-files"
+    "\\Translated_version\\KR"
   ],
-  "SelectedNode": "\\Translated_version\\KR\\regular_expression.md",
+  "SelectedNode": "\\Translated_version\\KR\\String example in python.md",
   "PreviewInSolutionExplorer": false
 }

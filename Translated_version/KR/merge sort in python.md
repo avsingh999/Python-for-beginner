@@ -1,11 +1,11 @@
-# Merge Sort
+# 병합정렬
 
-## Description
+## 묘사
 
-Conceptually, a merge sort works as follows:
+개념적으로 병합 정렬은 다음과 같이 작동합니다.
 
-1. Divide the unsorted list into n sublists, each containing 1 element (a list of 1 element is considered sorted).
-2. Repeatedly merge sublists to produce new sorted sublists until there is only 1 sublist remaining. This will be the sorted list.
+1. 정렬되지 않은 목록을 각각 1 개의 요소를 포함하는 n 개의 하위 목록으로 나눕니다 (1 개의 요소 목록은 정렬 된 것으로 간주됨).
+2. 하나의 하위목록만 남을 때까지 하위목록을 반복해서 병합하여 새로운 정렬된 하위 목록을 생성합니다. 정렬 된 목록이됩니다.
 
 ## Code
 

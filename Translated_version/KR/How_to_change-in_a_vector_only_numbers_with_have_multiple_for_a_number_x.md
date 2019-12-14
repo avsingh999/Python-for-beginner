@@ -1,7 +1,7 @@
-# How to change in a vector only numbers with have multiple for a number x
+# 숫자 x에 대해 배수가 여러개인 벡터만 변경하는 방법
 
-#HOW
-You need create a function that check if an element X in a vector(list) is divisible for another number Y
+#방법
+벡터(목록)의 요소 X가 다른 숫자 Y로 나눌 수 있는지 확인하는 함수를 만들어야합니다.
 ```
 def change_multiple(change_to,multiple,vector):
     for i in range(len(vector)): # scroll through the list
@@ -10,7 +10,7 @@ def change_multiple(change_to,multiple,vector):
         
 ```
  
- *One exemple for test*
+ *테스트의 한 예*
 ```
 vector = [4,5,6,7,9,10]
 multiple = 2

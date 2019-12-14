@@ -145,27 +145,9 @@ print r.encoding
 >>> r.encoding = ‘ISO-8859-1’
 ```
 
-# Custom Headers
+# Custom 헤더들
 
-If you want to add custom HTTP headers to a request, you must pass them through a dictionary to the headers parameter.
-
-```python
-import json
-
-url = 'https://api.github.com/some/endpoint'
-payload = {'some': 'data'}
-headers = {'content-type': 'application/json'}
-
-r = requests.post(url, data=json.dumps(payload), headers=headers)
-```
-
-## Redirection and History
-
-Requests will automatically perform a location redirection when you use the GET and OPTIONS verbs in Python.
-
-GitHub will redirect all HTTP requests to HTTPS automatically. This keeps things secure and encrypted.
-
-You can use the history method of the response object to track redirection status.
+만약 직접 제작한 HTTP 헤더들을 request에 추가하고 싶다면, dictionary를 통해서 헤더들의 매개변수를 전달해야합니다.
 
 ```python
 import json
@@ -177,14 +159,32 @@ headers = {'content-type': 'application/json'}
 r = requests.post(url, data=json.dumps(payload), headers=headers)
 ```
 
-## Make an HTTP Post Request
-You can also handle post requests using the Requests library.
+## Redirection 과 History
+
+파이썬에서 GET과 OPTIONS 동사들을 사용할 때 Requests가 자동으로 위치 redirection을 수행합니다.
+
+GitHub는 모든 HTTP request들을 HTTPS로 자동 redirect합니다. 이를 통해 보안 및 암호화상태가 유지됩니다.
+
+응답객체의 history 메소드를 사용하려여 redirection 상태를 추적할 수 있습ㄴ디ㅏ.
+
+```python
+import json
+
+url = 'https://api.github.com/some/endpoint'
+payload = {'some': 'data'}
+headers = {'content-type': 'application/json'}
+
+r = requests.post(url, data=json.dumps(payload), headers=headers)
+```
+
+## HTTP 우편 Request만들기
+Request들 라이브러리를 사용하여 우편요청을 다룰 수 있습니다.
 
 ```python
 r = requests.post('http://httpbin.org/post')
 ```
 
-But you can also rely on other HTTP requests too, like PUT, DELETE, HEAD, and OPTIONS.
+그러나 PUT, DELETE, HEAD, 및 OPTIONS과 같은 다른 HTTP요청에도 의존할 수 있습니다.
 
 ```python
 r = requests.put("http://httpbin.org/put")
@@ -193,7 +193,7 @@ r = requests.head("http://httpbin.org/get")
 r = requests.options("http://httpbin.org/get")
 ```
 
-You can use these methods to accomplish a great many things. For instance, using a Python script to create a GitHub repo.
+이러한 메소드들을 이용하여 많은 좋은것들을 성취할 수 있습니다. 예를 들어, 파이썬 스크립트를 사용하여 GitHub .
 
 ```python
 import requests, json
@@ -205,12 +205,12 @@ r = requests.post(github_url, data, auth=('user', '*****'))
 print r.json
 ```
 
-## Errors and Exceptions
+## 에러들과 예외들
 
-There are a number of exceptions and error codes you need to be familiar with when using the Requests library in Python.
+파이썬에서 Requests 라이브러리를 사용할 떄 숙지해야 할 많은 예외 및 에러 코드들이 있습니다.
 
-If there is a network problem like a DNS failure, or refused connection the Requests library will raise a ConnectionError exception.
-With invalid HTTP responses, Requests will also raise an HTTPError exception, but these are rare.
-If a request times out, a Timeout exception will be raised.
-If and when a request exceeds the preconfigured number of maximum redirections, then a TooManyRedirects exception will be raised.
-Any exceptions that Requests raises will be inherited from the requests.exceptions.RequestException object.
+DNS 오류와 같은 네트워크 문제가 있거나 연결이 거부 된 경우 Requests 라이브러리는 ConnectionError 예외를 발생시킵니다.
+잘못된 HTTP 응답을 사용하면, Requests에서도 HTTPError 예외가 발생하지만, 그런 경우는 매우 드뭅니다.
+요청 시간이 초과되면 시간 초과 예외가 발생합니다.
+요청이 사전 구성된 최대 리디렉션 수를 초과하면, TooManyRedirects 예외가 발생합니다.
+Request들이 제기하는 모든 예외는 requests.exceptions.RequestException 객체에서 상속됩니다.

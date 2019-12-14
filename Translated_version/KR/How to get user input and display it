@@ -1,11 +1,11 @@
-ourNumber will hold the number given by the user.
-input() will wait for a user input.
-Inside the input () can be left blank but I like to add something to show the user.
+ourNumber는 사용자가 제공한 번호를 보유합니다.
+input()은 사용자 입력을 기다립니다.
+input()안에는 비워둘 수 있지만 사용자에게 보여줄 내용을 추가하고 싶습니다.
 
-print() will display anything held within.
-When printing words use "" but for variables just use their name.
+print()는 내부에있는 모든 것을 표시합니다.
+단어를 출력할 때는 ""를 사용하지만 변수의경우 이름만 사용하십시오.
 
 
 
-ourNumber = input("Enter a number: ")
+ourNumber = input("이름을 입력하세요 : ")
 print(ourNumber + "... I have seen better.")

@@ -1,4 +1,4 @@
-To create a set in python, you can use the set() function.
+﻿파이썬에서 집합을 만들려면 set() 함수를 사용할 수 있습니다.
   example=[1,2,2,3,4,5,5,5,5,5]
   x= set(example)
   print(x)
@@ -23,71 +23,71 @@ To create a set in python, you can use the set() function.
 >>> print(x)
 {1, 2, 3, 5}
 
-Inbuilt set methods:
-Type help(set()) to see detail
+내장 셋팅된 메소드 :
+자세한 내용을 보려면 help(set())를 입력하십시오.
 
  |  add(...)
- |      Add an element to a set.
- |      
- |      This has no effect if the element is already present.
+ |      세트에 요소를 추가합니다.
+ |
+ |		요소가 이미 존재하는 경우에는 효과가 없습니다.
  |  
  |  clear(...)
- |      Remove all elements from this set.
+ |      이 세트에서 모든 요소를 제거합니다.
  |  
  |  copy(...)
- |      Return a shallow copy of a set.
+ |      세트의 얕은 복사본을 돌려줍니다.
  |  
  |  difference(...)
- |      Return the difference of two or more sets as a new set.
+ |      둘 이상의 세트 차이를 새로운 세트로 반환합니다.
  |      
- |      (i.e. all elements that are in this set but not the others.)
+ |      (즉,이 세트에 있지만 다른 것은 아닌 모든 요소.)
  |  
  |  difference_update(...)
- |      Remove all elements of another set from this set.
+ |      이 세트에서 다른 세트의 모든 요소를 제거합니다.
  |  
  |  discard(...)
- |      Remove an element from a set if it is a member.
+ |		멤버인 경우 세트에서 요소를 제거합니다.
  |      
- |      If the element is not a member, do nothing.
+ |      요소가 멤버가 아닌 경우 아무 것도 수행하지 않습니다.
  |  
  |  intersection(...)
- |      Return the intersection of two sets as a new set.
+ |      두 세트의 교집합을 새로운 세트로 반환합니다.
  |      
- |      (i.e. all elements that are in both sets.)
+ |      (즉, 두 세트에있는 모든 요소.)
  |  
  |  intersection_update(...)
- |      Update a set with the intersection of itself and another.
+ |      자신과 다른 부분의 교차로 세트를 업데이트합니다.
  |  
  |  isdisjoint(...)
- |      Return True if two sets have a null intersection.
+ |      두 세트에 null 교차가 있으면 True를 반환합니다.
  |  
  |  issubset(...)
- |      Report whether another set contains this set.
+ |      다른 세트에이 세트가 포함되어 있는지 보고하합니다.
  |  
  |  issuperset(...)
- |      Report whether this set contains another set.
+ |      이 세트에 다른 세트가 포함되어 있는지보고합니다.
  |  
  |  pop(...)
- |      Remove and return an arbitrary set element.
- |      Raises KeyError if the set is empty.
+ |      임의의 세트 요소를 제거하고 반환합니다.
+ |      세트가 비어있는 경우 KeyError 발생.
  |  
  |  remove(...)
- |      Remove an element from a set; it must be a member.
+ |      세트에서 요소를 제거합니다. 멤버여야 합니다.
  |      
- |      If the element is not a member, raise a KeyError.
+ |      요소가 멤버가 아닌 경우 KeyError를 발생시킵니다.
  |  
  |  symmetric_difference(...)
- |      Return the symmetric difference of two sets as a new set.
+ |      두 세트의 대칭 차이를 새로운 세트로 반환합니다.
  |      
- |      (i.e. all elements that are in exactly one of the sets.)
+ |      (즉, 정확히 하나의 세트에있는 모든 요소)
  |  
  |  symmetric_difference_update(...)
- |      Update a set with the symmetric difference of itself and another.
+ |      자체와 다른 대칭적인 차이로 세트를 업데이트합니다.
  |  
  |  union(...)
- |      Return the union of sets as a new set.
+ |      집합 union을 새로운 집합으로 반환합니다.
  |      
- |      (i.e. all elements that are in either set.)
+ |      (즉, 어느 한 세트에있는 모든 요소)
  |  
  |  update(...)
- |      Update a set with the union of itself and others.
+ |      자신과 다른 사람의 조합으로 세트를 업데이트하십시오.

@@ -1,13 +1,11 @@
-# How to Use join in Python
+#파이썬에서 join을 사용하는 방법
 
-Join in Python has the format 
+파이썬에서 join하는 형식은 다음과 같다.
 ``string.join(sequence,[,sep])``
 
-Where sep is a string separator used to concatenate elements of the
-sequence which will be either a list or a tuple of strings.
+여기서 sep은 문자열 요소의 list나 tuple이 될 시퀀스의 요소를 연결하는데 사용되는 문자열 구분기호입니다.
 
-The following function shows an example of a function that takes a 
-sequence and seperator and concatenates them using **join** method
+다음 함수는 시퀀스 및 구분 기호를 가져 와서 **join** 메서드를 사용하여 연결하는 함수의 예를 보여줍니다.
 
 ```python
 def joinSequenceSequence(sequence,sep):
@@ -15,9 +13,9 @@ def joinSequenceSequence(sequence,sep):
     print(sep.join(sequence))
 ```
 
-## Results
+## 결과물
 
-Calling the method as follows gives the result **1-2-3-4-5**
+다음과 같이 메소드를 호출하면 결과 **1-2-3-4-5** 가 나타납니다
 
 ```python
 joinSequenceSequence(["1","2","3","4","5"],"-")

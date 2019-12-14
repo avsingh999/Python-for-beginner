@@ -1,16 +1,16 @@
-The syntax to open a file object in Python is:  
+파이썬에서 파일객체를 여는 문법은 다음과 같습니다:  
 
 ```python
 file_object  = open(�filename�, �mode�)  
 ```
 
-"file_object" is the variable to add the file object.  
-"filename" is the... file name! :)  
-"mode"  tells the interpreter which way the file will be used.   
+"file_object"는 파일객체를 추가하기위한 변수입니다.
+"filename" 은... 파일이름입니다! :)  
+"mode"  는 인터프리터에게 파일이 사용될 방법을 알려줍니다.   
 
-The modes are:  
+모드들은 다음과 같습니다.:  
 
-�r� � Read mode which is used when the file is only being read   
-�w� � Write mode which is used to edit and write new information to the file (any existing files with the same name will be erased when this mode is activated)  
-�a� � Appending mode, which is used to add new data to the end of the file; that is new information is automatically amended to the end  
-�r+� � Special read and write mode, which is used to handle both actions when working with a file  
+�r� � 파일을 읽을 때만 사용되는 읽기 모드  
+�w� � 파일에 새 정보를 편집하고 쓰는데 사용되는 쓰기모드 (이 모드가 활성화되면 이름이 같은 기존 파일이 지워집니다)  
+�a� � 파일끝에 새 데이터를 추가하는데 사용되는 추가모드. 새로운 정보는 자동으로 끝까지 수정됩니다.
+�r+� � 파일작업시 두가지 작업을 모두 처리하는데 사용되는 특수한 읽기 및 쓰기 모드

@@ -1,8 +1,8 @@
 ```python
-# password generator in python
-# It generate strong password of 8 character long
+# 파이썬에서 암호 생성기
+# 8 자 길이의 강력한 비밀번호를 생성합니다
 
-from string import punctuation   # punctuation contains all special characters
+from string import punctuation   # 문장 부호에는 모든 특수 문자가 포함됩니다
 import string
 import random as rd
 

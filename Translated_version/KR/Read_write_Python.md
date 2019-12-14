@@ -1,27 +1,27 @@
-# Read file in Python
+# 파이썬에서 파일 읽기
 
-## To read the data
+## 데이터를 읽는법
 
 ```python
 file=open("filename","r")
 data=file.read()
 ```
 
-## Using this method you can read encoded files and save the file data in list
+## 이 방법을 사용하면 인코딩 된 파일을 읽고 파일 데이터를 목록에 저장할 수 있습니다
 
 ```python
 with open("enter your file_name","r",encoding='UTF8') as title:
         title=title.readlines() 
 ```
 
-## To write a file in python
+## 파일을 쓰는법
 
 ```python
 file=open("filename","w")
 file.write("Enter your data that needs to be written in the file")
 ```
 
-## Another method to write in a file
+## 파일을 쓰는 또 다른 방법
 
 ```python
 with open("file_name", "w") as f:

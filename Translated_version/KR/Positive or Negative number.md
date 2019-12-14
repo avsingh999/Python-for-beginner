@@ -1,5 +1,5 @@
-## Positive or Negative
-python code, to find positive or Negative number.
+## 긍정적 또는 부정적
+파이썬 코드, 양수 또는 음수를 찾습니다.
 
 ```python
 if x < 0:

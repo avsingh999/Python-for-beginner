@@ -1,13 +1,13 @@
-# Importing Library and creating Socket Instance
+# 라이브러리 가져오기 및 소켓 인스턴스 작성
 import socket
 s = socket.socket()
   
-# Defining Port 
+# port 정의하기 
 port = 5056                
   
 s.connect(('127.0.0.1', port)) 
   
-# Receving data from server (buffer)
+# 서버로부터 데이터 받기(버퍼)
 recievs_data = s.recv(1024) 
 
 print(recievs_data.decode())

@@ -1,42 +1,42 @@
-# How to print random number in a range python
+# 파이썬에서 범위안의 난수를 출력하는 방법
 
 
-For this we use the inbuilt `random` module to generate random numbers.
-From the `random` module we import the method `randint` that generates a random integer value.
+이를 위해 내장된 `random` 모듈을 사용하여 난수들을 생성합니다.
+`random` 모듈에서 임의의 정수값을 생성하는`randint` 메소드를 가져옵니다.
 
-# `randint()` Parameters
+# `randint()` 매개변수들
 
-The `randint()` method takes a two argument:
+ `randint()` 메소드는 2개의 인자를 가집니다:
 
 **a** & **b**.
 
 
-The syntax for `randint()` is
+ `randint()` 의 문법은 다음과 같습니다
 ```python
 randint(a, b)
 ```
 
-# Return value from `randint()`
+#  `randint()` 의 반환값
 
-Returns a random integer N such that a <= N <= b.
+a <= N <= b가되도록 임의의 정수 N을 반환합니다.
 
-# Example
+# 예시
 
 ```python
-# importing the `randint` method from `random` module
+# `random` 모듈에서`randint` 메소드 가져 오기
 from random import randint
 
-# generate a random integer 
+# 임의의 정수를 생성
 num = randint(1, 100)
 
-# print the randomly generated number
-print('The randomly generated number i is:', num)
+# 무작위로 생성된 숫자를 출력
+print('무작위로 생성된 숫자 i :', num)
 
-# since the value will change on each execution, my randomly generated number will obviously be different than your output
+# 각 실행마다 값이 변경되므로, 나의 임의로 생성된 숫자는 분명히 당신의 출력과 다릅것입니다.
 ```
 
-The output of this code for me was:
+나의 이 코드에서의 출력은 다음과 같았습니다:
 
 ```bash
-The randomly generated number is: 6
+무작위로 생성된 숫자 i : 6
 ```

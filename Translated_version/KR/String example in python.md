@@ -1,15 +1,15 @@
-# String example in python?
+# 파이썬에서 문자열 예제?
 
-String is sequence of Unicode characters. We can use single quotes or double quotes to represent strings. Multi-line strings can be denoted using triple quotes, ''' or """.
+문자열은 유니코드 문자시퀀스입니다. 작은따옴표나 큰따옴표를 사용하여 문자열을 나타낼 수 있습니다. 여러줄 문자열은 삼중따옴표 ''' 또는 """를 사용하여 표시할 수 있습니다.
 
 ```python
-s = "This is a string"
+s = "이건 문자열입니다"
 s = '''a multiline
 ```
 
-Like list and tuple, slicing operator [] can be used with string. Strings are immutable.
+list 및 tuple과 같이 슬라이싱 연산자[]를 문자열과 함께 사용할 수 있습니다. 문자열은 변경할 수 없습니다.
 
-# Example
+# 예시
 
 ```python
 s = 'Hello world!'
@@ -20,7 +20,7 @@ print("s[4] = ", s[4])
 # s[6:11] = 'world'
 print("s[6:11] = ", s[6:11])
 
-# Generates error
-# Strings are immutable in Python
+# 에러 발생
+# 파이썬에서는 문자열을 변경할 수 없습니다
 s[5] ='d'
 ```

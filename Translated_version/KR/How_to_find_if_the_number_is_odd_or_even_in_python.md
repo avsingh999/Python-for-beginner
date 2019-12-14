@@ -1,11 +1,11 @@
-# How to find if the number is odd or even in python
+# 파이썬에서 숫자가 홀수인지 또는 짝수인지 찾는 방법
 
-The `%` (mod) get the rest of division between two numbers, so if the x is even, the rest of x with 2 is 0.
+`%` (mod)는 두 숫자 사이의 나머지 나누기를 얻으므로 x가 짝수이면 x가 2인 나머지는 0입니다.
 ```
 number = 2
 
 if number%2 == 0:
-    print(number,"is even")
+    print(number,"짝수입니다.")
 else:
-    print(number, "id odd")
+    print(number, "홀수입니다.")
 ```

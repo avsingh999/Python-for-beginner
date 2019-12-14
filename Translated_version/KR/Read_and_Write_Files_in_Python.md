@@ -1,81 +1,81 @@
-## Read and Write Files in Python
+## 파이썬에서 파일을 읽고 쓰기
 
 
-- Open a File in read+ mode(Opens file for reading and writing)
+- 읽기 + 모드로 파일 열기 (읽기 및 쓰기를 위한 파일열기)
 ```
    target=open('filename.txt','r+')
 ```
 
-- Print the file content
+- 파일 내용 출력
 ```
   print target.read()
 ```
-- Write content into the filename
+- filename에 내용적기
 
 ```
   target.write("I m writing into the file \n")
 ```
 
-- There are also other other modes to access files. They are, 
+- 파일에 접근하는 다른 모드도 있습니다. 그들은, 
 <table class="table table-bordered">
 <tr>
 <td class="ts">1</td>
 <td><p><b>r</b></p>
-<p>Opens a file for reading only. The file pointer is placed at the beginning of the file. This is the default mode.</p></td>
+<p>읽기전용으로 파일을 엽니다. 파일포인터는 파일의 시작부분에 있습니다. 이것이 기본모드입니다.</p></td>
 </tr>
 <tr>
 <td class="ts">2</td>
 <td><p><b>rb</b></p>
-<p>Opens a file for reading only in binary format. The file pointer is placed at the beginning of the file. This is the default mode.</p></td>
+<p>이진형식으로만 읽을 수 있도록 파일을 엽니다. 파일포인터는 파일의 시작부분에 있습니다. 이것이 기본모드입니다.</p></td>
 </tr>
 <tr>
 <td class="ts">3</td>
 <td><p><b>r+</b></p>
-<p>Opens a file for both reading and writing. The file pointer placed at the beginning of the file.</p></td>
+<p>읽고 쓸수있는 파일을 엽니다. 파일의 시작부분에 파일포인터가 위치합니다.</p></td>
 </tr>
 <tr>
 <td class="ts">4</td>
 <td><p><b>rb+</b></p>
-<p>Opens a file for both reading and writing in binary format. The file pointer placed at the beginning of the file.</p></td>
+<p>이진형식으로 읽고 쓸수있는 파일을 엽니다. 파일의 시작부분에 파일포인터가 위치합니다.</p></td>
 </tr>
 <tr>
 <td class="ts">5</td>
 <td><p><b>w</b></p>
-<p>Opens a file for writing only. Overwrites the file if the file exists. If the file does not exist, creates a new file for writing.</p></td>
+<p>쓰기전용으로 파일을 엽니다. 파일이 존재하면 파일을 덮어씁니다. 파일이 존재하지않으면 새 파일을 작성합니다.</p></td>
 </tr>
 <tr>
 <td class="ts">6</td>
 <td><p><b>wb</b></p>
-<p>Opens a file for writing only in binary format. Overwrites the file if the file exists. If the file does not exist, creates a new file for writing.</p></td>
+<p>이진형식으로만 쓸 파일을 엽니다. 파일이 존재하면 파일을 덮어씁니다. 파일이 존재하지않으면 새 파일을 작성합니다.</p></td>
 </tr>
 <tr>
 <td class="ts">7</td>
 <td><p><b>w+</b></p>
-<p>Opens a file for both writing and reading. Overwrites the existing file if the file exists. If the file does not exist, creates a new file for reading and writing.</p></td>
+<p>쓰기와 읽기를위한 파일을 엽니다. 파일이 존재하면 기존파일을 덮어씁니다. 파일이 존재하지 않으면 읽고쓸 새 파일을 작성하십시오.</p></td>
 </tr> 
 <tr>
 <td class="ts">8</td>
 <td><p><b>wb+</b></p>
-<p>Opens a file for both writing and reading in binary format. Overwrites the existing file if the file exists. If the file does not exist, creates a new file for reading and writing.</p></td>
+<p>이진 식으로 쓰고 읽을수있는 파일을 엽니다. 파일이 존재하면 기존파일을 덮어씁니다. 파일이 존재하지않으면 읽고쓸 새 파일을 작성하십시오.</p></td>
 </tr>
 <tr>
 <td class="ts">9</td>
 <td><p><b>a</b></p>
-<p>Opens a file for appending. The file pointer is at the end of the file if the file exists. That is, the file is in the append mode. If the file does not exist, it creates a new file for writing.</p></td>
+<p>추가할 파일을 엽니다. 파일이 존재하면 파일포인터는 파일의 끝에 있습니다. 즉, 파일이 추가모드에 있습니다. 파일이 존재하지 않으면 새 파일을 작성합니다.</p></td>
 </tr> 
 <tr>
 <td class="ts">10</td>
 <td><p><b>ab</b></p>
-<p>Opens a file for appending in binary format. The file pointer is at the end of the file if the file exists. That is, the file is in the append mode. If the file does not exist, it creates a new file for writing.</p></td>
+<p>이진형식으로 추가할 파일을 엽니다. 파일이 존재하면 파일포인터는 파일의끝에 있습니다. 즉, 파일이 추가모드에 있습니다. 파일이 존재하지 않으면 새 파일을 작성합니다.</p></td>
 </tr> 
 <tr>
 <td class="ts">11</td>
 <td><p><b>a+</b></p>
-<p>Opens a file for both appending and reading. The file pointer is at the end of the file if the file exists. The file opens in the append mode. If the file does not exist, it creates a new file for reading and writing.</p></td>
+<p>추가 및 읽기용 파일을 엽니다. 파일이 존재하면 파일포인터는 파일의끝에 있습니다. 추가 모드에서 파일이 열립니다. 파일이 존재하지 않으면 읽고쓸 새 파일을 작성합니다.</p></td>
 </tr> 
 <tr>
 <td class="ts">12</td>
 <td><p><b>ab+</b></p>
-<p>Opens a file for both appending and reading in binary format. The file pointer is at the end of the file if the file exists. The file opens in the append mode. If the file does not exist, it creates a new file for reading and writing.</p></td>
+<p>이진형식으로 추가하고 읽을 수 있는 파일을 엽니다. 파일이 존재하면 파일포인터는 파일의끝에 있습니다. 추가모드에서 파일이 열립니다. 파일이 존재하지 않으면 읽고쓸 새 파일을 작성합니다.</p></td>
 </tr>
 </table>

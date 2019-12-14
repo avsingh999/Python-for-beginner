@@ -3,7 +3,7 @@ import tkinter as tk
 root = tk.Tk()
 
 v = tk.IntVar()
-v.set(1)  # initializing the choice, i.e. Python
+v.set(1)  # 선택을 초기화하는 것, 즉 파이썬
 
 languages = [
     ("Python",1),

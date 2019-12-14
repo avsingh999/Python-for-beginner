@@ -1,26 +1,26 @@
-# How to split a string for int in python
+# 파이썬에서 int로 문자열을 나누는 방법
 
-To do this you must first use python is native `split()` function, it separates a string according to a delimiter.
-#Syntax
+이를 위해서는 먼저 파이썬이 네이티브 `split ()` 함수를 사용해야하며, 구분 기호에 따라 문자열을 구분합니다.
+#문법
 
 `string.split(separator, max)`
 <br/>
-`separator`	Optional. Specifies the separator to use when splitting the string. Default value is a whitespace. 
+`separator`	선택적임. 문자열을 분할 할 때 사용할 구분기호를 지정합니다. 기본값은 공백입니다.
 <br/>
-`max`	Optional. Specifies how many splits to do. Default value is -1, which is "all occurrences"
+`max`	선택적임. 분할 수를 지정합니다. 기본값은 -1이며 "모든 발생"입니다.
 
-# HOW 
+# 방법
 
-INPUT
+입력
 ```
 string = "ONE TWO"
 one = string.split(' ')[0] # ['ONE']
 two = string.split(' ')[1] # ['TWO']
 ```
-the `[i]` indicates which word will be selected, where i represents the position of the separated word
+`[i]` 는 어떤 단어를 선택할 것인지를 나타냅니다. 여기서 i는 분리된 단어의 위치를 나타냅니다.
 <br/>
 
-# HOW TO DO TO RESULT IN INT
+# INT로 결과를 얻는 방법
 ```
 string = "02-04-1994"
 

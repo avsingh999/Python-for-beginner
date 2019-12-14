@@ -1,23 +1,23 @@
-### What are Lambda Functions ?
+### Lambda 함수 란 무엇입니까?
 
-In Python, Anonymous function is a function that is defined without a name.
-These Anonymous functions are called lambda functions
+파이썬에서 Anonymous function는 이름없이 정의된 함수입니다.
+이러한 Anonymous function를 람다함수라고합니다.
 
-## Syntax of Lambda Function in python.
+## 파이썬에서 람다함수의 문법
 
 ```
 lambda arguments: expression
 ```
 
-## Example:
+## 예시:
 
 ```python
-# To Cube a number.
+# 숫자를 세제곱하기
 cube = lambda x: x**3
 
 print(cube(10)) #output: 1000
 
-# To print the square of all the numbers in a list.
+# list에있는 모든 숫자의 제곱을 출력합니다.
 
 my_list = [1, 2, 3, 4]
 

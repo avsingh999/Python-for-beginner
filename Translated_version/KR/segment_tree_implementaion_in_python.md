@@ -1,152 +1,140 @@
-# Segment Tree Implementation In Python
+# 파이썬에서 segment 트리 구현
 
-[Source - Hackerearth](https://www.hackerearth.com/practice/data-structures/advanced-data-structures/segment-trees/tutorial/)  
+[출처- Hackerearth] (https://www.hackerearth.com/practice/data-structures/advanced-data-structures/segment-trees/tutorial/)
 
-Segment Tree is used in cases where there are multiple range queries on array and modifications  
-of elements of the same array.  
+segment 트리는 배열에 대해 여러 범위 쿼리가 있고 동일한 배열의 요소가 수정 된 경우에 사용됩니다.
 
-For example, finding the sum of all the elements in an array from indices *L to R*  
-or finding the minimum (famously known as Range Minumum Query problem)  
-of all the elements in an array from indices L to R.  
+예를 들어, 인덱스 *L부터 R까지* 배열의 모든요소의 합을 찾거나 인덱스 L에서 R로 배열의 모든요소의 최소값 (최소범위쿼리문제로 잘 알려져있음)을 찾는다고 해봅시다.
 
-These problems can be easily solved with one of the most versatile data structures, Segment Tree.  
+이러한 문제는 가장 다양한 데이터 구조 중 하나인 segment 트리를 사용하여 쉽게 해결할 수 있습니다.
 
-### What is Segment Tree?  
+### segment 트리 란 무엇입니까?
 
-Segment Tree is a basically a binary tree used for storing the intervals or segments.  
-Each node in the Segment Tree represents an interval.  
-Consider an array *A of size N* and a corresponding Segment Tree T:
+segment 트리는 기본적으로 간격 또는 segment를 저장하는데 사용되는 이진트리입니다.
+segment 트리의 각 노드는 간격을 나타냅니다.
+ *크기가 N인 A*배열과 해당 segment 트리 T를 고려하십시오.
 
-The root of T will represent the whole array A[0:N−1].
-Each leaf in the Segment Tree *T* will represent a single element *A[i]* such that *0 ≤ i < N*.  
-The internal nodes in the Segment Tree T represents the union of elementary intervals A[i:j]  
-where *0 ≤ i < j < N*.  
+T의 근은 전체 배열 A[0:N−1]을 나타냅니다.
+segment 트리 *T*의 각 리프는 *0 ≤ i < N *가 되도록 단일 요소 *A[i]*를 나타냅니다.
+segment 트리 T의 내부 노드는 기본 간격 A[i:j]의 합집합을 나타냅니다. 여기서 *0 ≤ i < j < N* 입니다.
 
-The root of the Segment Tree represents the whole array A[0:N−1].  
-Then it is broken down into two half intervals or segments and the two children of the root in turn represent the 
-A[0:(N−1)/2] and A[(N−1)/2+1 : (N−1)].  
-So in each step, the segment is divided into half and the two children represent those two halves.  
-So the height of the segment tree will be log<sub>2</sub>N.  
+segment 트리의 루트는 전체 배열 A[0:N−1]을 나타냅니다.
+그런 다음 두 개의 반 간격 또는 segment로 분류되고 루트의 두 자식은 차례로 A[0:(N−1)/2] 및 A[(N−1)/2+1 : (N−1)] 을 나타냅니다.
+따라서 각 단계에서 segment는 반으로 나뉘고 두 자녀는 그 두 반쪽을 나타냅니다.
+따라서 segment 트리의 높이는 log<sub>2</sub>N이됩니다.
 
-There are N leaves representing the N elements of the array.  
-The number of internal nodes is N−1. So, a total number of nodes are 2N−1.
+배열의 N 개 요소를 나타내는 N 개의 잎이 있습니다.
+내부 노드의 수는 N-1입니다. 따라서 총 노드 수는 2N-1입니다
 
-#### Segment tree provides two operations:
-**Update** : To update the element of the array A and reflect the corresponding change in the Segment tree.  
-**Query** : In this operation we can query on an interval or segment and return the answer to the problem  
-(say minimum/maximum/summation in the particular segment).  
-<hr>  
-### Implementation of a segment tree in python
+#### segment 트리는 두 가지 작업을 제공합니다.
+** Update ** : 배열 A의 요소를 업데이트하고 segment 트리의 해당 변경 사항을 반영합니다.
+** Query ** :이 작업에서는 구간 또는 segment를 쿼리하여 문제에 대한 답변을 반환 할 수 있습니다.
+(특정 segment에서 최소 / 최대 / 합계).
+<hr>
+### 파이썬에서 segment 트리 구현
 
-Since a Segment Tree is a binary tree, a simple linear array can be used to represent the Segment Tree.  
-Before building the Segment Tree, one must figure what needs to be stored in the Segment Tree's node?. 
-For example, if the question is to find the sum of all the elements in an array from indices *L to R*  
-,then at each node (except leaf nodes) the sum of its children nodes is stored.  
+segment 트리는 이진 트리이기 때문에 간단한 선형 배열을 사용하여 segment 트리를 나타낼 수 있습니다.
+segment 트리를 구축하기 전에 segment 트리의 노드에 무엇이 저장되어야하는지 파악해야합니다.
+예를 들어, 인덱스 *L에서 R까지* 배열의 모든 요소의 합을 찾는것이 문제라면 각 노드 (리프 노드 제외)에서 하위노드의 합이 저장됩니다.
 
-A Segment Tree can be built using recursion (bottom-up approach ).  
+segment 트리는 재귀를 사용하여 구축 할 수 있습니다 (아래부터 위로 접근).
 ```
--> Start with the leaves and go up to the root and update the corresponding changes in the nodes  
--> that are in the path from leaves to root.  
--> Leaves represent a single element.  
--> In each step, the data of two children nodes are used to form an internal parent node.  
--> Each internal node will represent a union of its children’s intervals.  
--> Merging may be different for different questions.  
--> So, recursion will end up at the root node which will represent the whole array.  
+-> 리프에서 시작하여 루트로 이동하여 노드의 해당 변경사항을 업데이트하십시오.
+-> 리프에서 루트까지의 경로에 있습니다.
+-> 나뭇잎은 단일 요소를 나타냅니다.
+-> 각 단계에서 두 개의 하위노드 데이터가 내부상위 노드를 형성하는데 사용됩니다.
+-> 각 내부노드는 하위 간격의 합집합을 나타냅니다.
+-> 질문마다 병합이 다를 수 있습니다.
+-> 따라서 재귀는 전체배열을 나타내는 루트노드에서 끝납니다.
 ```  
 
 For update(). 
 
 ```
--> Search the leaf that contains the element to update.  
--> This can be done by going to either on the left child or the right child depending  
-   on the interval which contains the element.  
--> Once the leaf is found, it is updated and again use the bottom-up approach to update the  
-   corresponding change in the path from that leaf to the root.  
+-> 업데이트 할 요소가 포함된 리프를 검색하십시오.
+-> 이것은 요소를 포함하는 간격에 따라 왼쪽자식이나 오른쪽자식으로 이동하여 수행할 수 있습니다.
+-> 리프가 발견되면 리프가 업데이트되고 다시 상향식 접근 식을 사용하여 해당 리프에서 루트까지의 경로변경을 업데이트합니다.
 ```   
 
-To make a query() on the Segment Tree,  
+segment 트리에서 query()를 만들려면
 ```
--> Select a range from L to R (which is usually given in the question).  
--> Recurse on the tree starting from the root and check if the interval  
-   represented by the node is completely in the range from L to R
-   If the interval represented by a node is completely in the range from L to R
-   return that node’s value.  
+-> L에서 R까지의 범위를 선택하십시오 (일반적으로 질문에 나와 있음).
+-> 루트에서 시작하여 트리에서 되풀이하여 노드가 나타내는 간격이 L에서 R까지의 범위에 있는지 확인하십시오.
+    노드가 나타내는 간격이 L에서 R까지의 범위에 있으면 해당 노드의 값을 반환합니다.
 ```  
 
-The Segment Tree of array A of size 7 will look like :  
+크기가 7 인 배열 A의 segment 트리는 다음과 같습니다:  
 ![image](https://he-s3.s3.amazonaws.com/media/uploads/a0c7f90.jpg)   
 ![image](https://he-s3.s3.amazonaws.com/media/uploads/aad673e.jpg)   
 
-**Take an example.**  Given an array A of size N and some queries.  
-There are two types of queries:  
-Update: Given idx and val, update array element A[idx] as A[idx] = A[idx]+val  
-Query: Given l and r return the value of A[l] + A[l+1] + A[l+2] + … + A[r−1] + A[r]   
-such that 0 ≤ l ≤ r <N  
-Queries and Updates can be in any order.  
+**예시를 들어봅시다.**  크기가 N인 배열 A와 일부쿼리가 제공됩니다.
+두가지 유형의 쿼리가 있습니다.
+Update : idx 및 val이 주어지면 배열 요소 A[idx]를 A[idx] = A[idx]+val로 업데이트합니다.
+Query : 주어진 l과 r은 0 ≤ l ≤ r <N이 되도록 A[l]+A[l+1]+A[l+2]+ … +A[r-1]+A[r]의 값을 반환
+쿼리 및 업데이트는 어떤 순서로든 가능합니다.
 
-*Naive Algorithm:*  
-This is the most basic approach. For every query, run a loop from l to r and calculate the sum of all the elements.  
-So each query will take O(N) time.  
-A[idx] += val will update the value of the element. Each update will take O(1).  
+*Naive 알고리즘*  
+이것이 가장 기본적인 접근법입니다. 모든 쿼리에 대해 l에서 r까지 루프를 실행하고 모든요소의 합계를 계산하십시오.
+따라서 각 쿼리는 O(N) 시간이 걸립니다.
+A[idx] += val은 요소의 값을 업데이트합니다. 각 업데이트에는 O(1)가 걸립니다.
 
-This algorithm is good if the number of queries are very low compared to updates in the array.  
+이 알고리즘은 배열의 업데이트에 비해 쿼리 수가 매우 적은경우에 좋습니다. 
 
-*Using Segment Tree:*  
-First, figure what needs to be stored in the Segment Tree's node.  
-The question asks for summation in the interval from l to r, so in each node,  
-sum of all the elements in that interval represented by the node.  
-Next, build the Segment Tree.  
-The implementation with comments below explains the building process.  
+*Segment 트리 사용하기:*  
+먼저 segment 트리의 노드에 무엇이 저장되어야하는지 파악하십시오.
+질문은 l에서 r까지의 간격으로 합산을 요청하므로 각 노드에서 해당간격의 모든요소의 합이 노드로 표시됩니다.
+다음으로 segment 트리를 작성하십시오.
+아래 주석이 포함 된 구현은 빌드 프로세스를 설명합니다
 
-**Building segment tree**  
+**segment 트리 building**  
 
 ```python
    def build(node, start, end):
        if start == end:
-           tree[node] = A[start]    # Leaf node will have a single element
+           tree[node] = A[start]    # 리프노드는 한개의 요소를 가지게될것
        else:
            mid = (start + end) / 2;
-           build(2*node, start, mid)     # Recurse on the left child
-           build(2*node+1, mid+1, end)  # Recurse on the right child  
-           tree[node] = tree[2*node] + tree[2*node+1] # Internal node will have the sum of both of its children
+           build(2*node, start, mid)     # 왼쪽 자식에 재귀
+           build(2*node+1, mid+1, end)  # 오른쪽 자식에 재귀 
+           tree[node] = tree[2*node] + tree[2*node+1] # 내부 노드는 두 자식의 합계를 가짐
 ```   
-**Time Complexity:** O(N)  
+**시간복잡도:** O(N)  
 <hr>  
 
-**Updating segment tree**  
+**segment 트리 Updating**  
 ```python
    def update(node, start, end, idx, val):
-       if start == end:          # Leaf node
+       if start == end:          # 리프 노드
            A[idx] += val
            tree[node] += val
        else:
            mid = (start + end) / 2;
            
-           if start <= idx and idx <= mid:              # If idx is in the left child, recurse on the left child
+           if start <= idx and idx <= mid:              # idx가 왼쪽 자식에 있으면 왼쪽 자식에 재귀
                update(2*node, start, mid, idx, val)
-           else:                                        # if idx is in the right child, recurse on the right child
+           else:                                        # idx가 올바른 자식을 갖는 경우 올바른 자식에 대해 재귀
                update(2*node+1, mid+1, end, idx, val)
                
-           tree[node] = tree[2*node] + tree[2*node+1];  # Internal node will have the sum of both of its children
+           tree[node] = tree[2*node] + tree[2*node+1];  # 내부 노드는 두 자식의 합계를 가짐
 ```  
-**Time Complexity:** O(logn)  
+**시간복잡도:** O(logn)  
 <hr>  
 
-**Querying a segment tree**  
+**segment 트리 Querying**  
 ```python
 int query(int node, int start, int end, int l, int r)
 {
     if(r < start or end < l)
     {
-        // range represented by a node is completely outside the given range
+        // 노드가 나타내는 범위가 지정된 범위를 완전히 벗어남
         return 0;
     }
     if(l <= start and end <= r)
     {
-        // range represented by a node is completely inside the given range
+        // 노드가 나타내는 범위는 주어진 범위 안에 완벽히 있음
         return tree[node];
     }
-    // range represented by a node is partially inside and partially outside the given range
+    // 노드로 표시되는 범위는 지정된 범위 내부 및 일부 범위를 벗어남
     int mid = (start + end) / 2;
     int p1 = query(2*node, start, mid, l, r);
     int p2 = query(2*node+1, mid+1, end, l, r);
@@ -154,7 +142,7 @@ int query(int node, int start, int end, int l, int r)
 }
 ```
 
-**Time Complexity:** O(logn)  
+**시간복잡도:** O(logn)  
 
 
 

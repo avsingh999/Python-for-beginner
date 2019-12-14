@@ -1,8 +1,8 @@
-# The while Loop
+# while 반복문
 
-With the while loop we can execute a set of statements as long as a condition is true.
+while 반복문을 사용하면 조건이 true인 동안에 일련의 명령문을 실행할 수 있습니다.
 
-Print `i` as long as `i` less than `6`
+`6`보다 작은 `i`를 출력
 
 ```python
 i = 1
@@ -10,13 +10,12 @@ while i < 6:
     print(i)
     i += 1
 ```
-> Note: remember to increment `i`, or else the loop will continue forever.
+> 참고 : `i`를 증가시켜야합니다. 그렇지 않으면 반복문 영원히 계속됩니다.
+### break문
 
-### The break Statement
+break문을 사용하면 while 조건이 true인 경우에도 루프를 중지할 수 있습니다:
 
-With the break statement we can stop the loop even if the while condition is true:
-
-Exit the loop when `i` is `3`
+ `i` 가 `3` 이면 루프를 종료합니다.
 
 ```python
 i = 1
@@ -26,12 +25,12 @@ while i < 6:
         break
     i += 1
 ```
-### The continue Statement
+### continue문
 
-With the continue statement we can stop the current iteration, and continue with the next:
+continue문을 사용하면 현재의 반복을 중지하고 다음에 오는 것을 계속할 수 있습니다.
 
 
-continue the next iteration when `i` is `3`
+ `i` 가 `3` 일 때 다음의 것을 계속 반복합니다
 
 ```python
 i = 0
