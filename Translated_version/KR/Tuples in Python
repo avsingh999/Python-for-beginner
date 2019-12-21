@@ -1,16 +1,16 @@
-CREATING A TUPLE
+TUPLE 만들기
 
-- Tuple having integers
+- 정수를 갖는 tuple
 my_tuple = (1, 2, 3)
-print(my_tuple)  # Output: (1, 2, 3) 
+print(my_tuple)  # 출력: (1, 2, 3) 
 
-- Tuple with mixed datatypes
+- 데이터 유형이 혼합된 tuple
 my_tuple = (1, "Hello", 3.4)
-print(my_tuple)  # Output: (1, "Hello", 3.4)  
+print(my_tuple)  # 출력: (1, "Hello", 3.4)  
 
-- Tuple without using parentheses 
+- 괄호를 사용하지 않는 tuple
 my_tuple = 3, 4.6, "dog"
-print(my_tuple)   # Output: 3, 4.6, "dog" 
+print(my_tuple)   # 출력: 3, 4.6, "dog" 
 
 INDEXING
 
@@ -22,17 +22,17 @@ SLICING
 
 my_tuple = ('p','r','o','g','r','a','m','i','z')
 
-# elements 2nd to 4th
-# Output: ('r', 'o', 'g')
+# 2 ~ 4 번째 요소
+# 출력: ('r', 'o', 'g')
 print(my_tuple[1:4])
 
-# elements beginning to 2nd
-# Output: ('p', 'r')
+# 2번쨰부터 시작하는 요소
+# 출력: ('p', 'r')
 print(my_tuple[:-7])
 
 TUPLE METHODS
 
 my_tuple = ('a','p','p','l','e',)
 
-print(my_tuple.count('p'))  # Output: 2
-print(my_tuple.index('l'))  # Output: 3
+print(my_tuple.count('p'))  # 출력: 2
+print(my_tuple.index('l'))  # 출력: 3

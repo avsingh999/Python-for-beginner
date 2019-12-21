@@ -1,22 +1,22 @@
-It's possible to write programs which can handle exceptions. Given below is an example, that asks the user for input until a valid integer has been entered, but it still allows the user to interrupt the program (using Ctrl-C or whatever the operating system supports); note that a user-generated interruption is signalled by raising the KeyboardInterrupt exception.
+예외를 처리 할 수있는 프로그램을 작성할 수 있습니다. 아래는 유효한 정수가 입력 될 때까지 사용자에게 입력을 요청하는 예제이지만, 여전히 사용자가 인터럽트를 발생(Ctrl-C 또는 운영 체제가 지원하는 모든 것을 사용);시켜 KeyboardInterrupt 예외를 발생시킴으로써 사용자가 프로그램 생성을 중단하도록 허용합니다.
 
 >>> while True:
         try:
-            x = int(input("Enter a number: "))
+            x = int(input("숫자를 입력하세요: "))
             break
         except ValueError:
-            print("That was an invalid number.  Please try again...")
+            print("그것은 유효하지 않은 숫자였습니다. 다시 시도하십시오 ...")
           
-The TRY statement works as follows:-
+TRY문은 다음과 같이 작동합니다.
 
-~First, the statement(s) between the try and except keywords are executed.
+~ 먼저 try키워드와 except키워드 사이의 명령문이 실행됩니다.
 
-~If no exception occurs, the except clause is skipped and execution of the try statement is finished.
+~ 예외가 없으면 except절을 건너뛰고 try문의 실행이 완료됩니다.
 
-~If an exception occurs during execution of the try clause, the rest of the clause is skipped. Then if its type matches the exception named after the except keyword, the except clause is executed, and then execution continues after the try statement.
+~ try절을 실행하는동안 예외가 발생하면 나머지 절은 건너 뜁니다. 그런다음 해당 유형이 except 키워드의 이름을 딴 예외와 일치하면 except절이 실행된 다음 try문 이후에 실행이 계속됩니다.
 
-~If an exception occurs which does not match the exception named in the except clause, it is passed on to outer try statements; if no handler is found, it is an unhandled exception and execution stops with a message as shown above.
+~ except절에 지정된 예외와 일치하지 않는 예외가 발생하면 외부 try문으로 전달됩니다. 처리기가 없으면 처리되지 않은 예외이며 위와같이 메시지와 함께 실행이 중지됩니다.
 
-There are other errors such as OSError,etc.
+OSError등과 같은 다른오류가 있습니다.
 
-source: docs.python.org
+출처 : docs.python.org

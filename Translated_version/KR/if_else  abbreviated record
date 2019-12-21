@@ -1,7 +1,7 @@
 ## Python 3.x
-An example of how to write an if/else construct
+if / else 구문을 작성하는 방법의 예
 
-Next instruction:
+다음 지시 사항 :
 
 ```python
 if X:
@@ -12,11 +12,11 @@ else:
 This will give the output as follows:
 > True
 
-Short, but, nevertheless, occupies the whole 4 lines. 
-Especially for such cases, an if / else expression was invented:
+그럼에도 불구하고 짧지 만 4 줄 전체를 차지합니다.
+특히 그러한 경우, if / else 표현이 발명되었습니다.
 
 ```python
 A = Y if X else Z
 ```
 
-In this instruction, the interpreter will execute the expression Y, if X is true, otherwise the expression Z will be executed.
+이 명령어에서 인터프리터는 X가 참이면 표현식 Y를 실행하고, 그렇지 않으면 표현식 Z가 실행됩니다.

@@ -1,8 +1,8 @@
-### Creating Variables
+### 변수 만들기
 
-Unlike other programming languages, Python has no command for declaring a variable.
+다른 프로그래밍언어와 달리 파이썬에는 변수를 선언하는 명령이 없습니다.
 
-A variable is created the moment you first assign a value to it.
+변수에 값을 처음 할당하는 순간 변수가 만들어집니다.
 
 ```python
 x = 1.1
@@ -11,47 +11,47 @@ print(x)
 print(y)
 ```
 
-Variables do not need to be declared with any particular type and can even change type after they have been set.
+변수는 특정유형으로 선언할 필요가 없으며 설정된 후에도 유형을 변경할 수 있습니다.
 
 ```python
-x = 4           # x is of type int
-x = "Facebook"  # x is now of type str
+x = 4           # x는 int타입입니다 
+x = "Facebook"  # x는 이제 문자열 타입입니다
 print(x)
 ```
 
-### Variable Names
+### 변수 이름
 
-A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). 
-Rules for Python variables:
+변수는 짧은이름(x나 y 같은)이나 보다 설명적인 이름(age, carname, total_volume)을 가질 수 있습니다.
+파이썬 변수에 대한 규칙 :
 
-- A variable name must start with a letter or the underscore character
-- A variable name cannot start with a number
-- A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
-- Variable names are case-sensitive (age, Age and AGE are three different variables)
+-변수 이름은 문자 또는 밑줄 문자로 시작해야합니다
+-변수 이름은 숫자로 시작할 수 없습니다
+-변수 이름은 영숫자 및 밑줄만 포함 할 수 있습니다 (A-z, 0-9 및 _)
+-변수 이름은 대소 문자를 구분합니다 (age, Age, AGE는 세가지의 다른 변수임)
 
-> Remember that variables are case-sensitive
+> 변수는 대소문자를 구분합니다
 
-### Output Variables
+### 출력 변수
 
-The Python print statement is often used to output variables.
+파이썬의 print문은 종종 변수를 출력하는데 사용됩니다.
 
-To combine both text and a variable, Python uses the + character:
+텍스트와 변수를 결합하기 위해, 파이썬은 + 문자를 사용합니다.
 
 ```python
-x = "amazing"
-print("Python is " + x)
+x = "놀라워"
+print("파이썬은 " + x)
 ```
 
-You can also use the + character to add a variable to another variable:
++ 문자를 사용하여 변수를 다른 변수에 추가 할 수도 있습니다:
 
 ```python
-x = "Python is "
-y = "amazing"
+x = "파이썬은 "
+y = "놀라워"
 z =  x + y
 print(z)
 ```
 
-For numbers, the + character works as a mathematical operator:
+숫자의 경우, + 문자는 수학적인 연산자로 작동합니다.
 
 ```python
 x = 5
@@ -59,7 +59,7 @@ y = 10
 print(x + y)
 ```
 
-If you try to combine a string and a number, Python will give you an error:
+문자열과 숫자를 결합하려고 하면, 파이썬에서 오류가 발생합니다:
 
 ```python
 x = 5

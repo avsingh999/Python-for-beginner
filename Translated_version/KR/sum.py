@@ -1,9 +1,9 @@
-# two float values
+# 두 개의 float 값
 val1 = 100.99
 val2 = 76.15
 
-# Adding the two given numbers
+# 주어진 두 숫자 추가
 sum = float(val1) + float(val2)
 
-# Displaying the addition result
-print("The sum of given numbers is: ", sum)
+# 추가 결과 표시
+print("주어진 숫자들의 합은 다음과 같다: ", sum)

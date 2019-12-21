@@ -1,6 +1,6 @@
-# How to join in python
+# 파이썬에 참여하는 법
 
-A list can be joined using together as a string using the stynax:
+다음 문법을 사용하여 문자열로 함께 list를 결합할 수 있습니다:
 
 ```python
 a_list = [1,2,3]
@@ -8,13 +8,13 @@ a_string = " ".join(a_list)
 print("A string:", a_string)
 ```
 
-Which will output:
+출력은 다음과 같을것입니다:
 
 ```sh
 A string: 1 2 3
 ```
 
-Looking at how *split* works in Python, `a_string.split(delimiter)`, 
-and how *join* works in other languages like JavaScript it's easy to confuse it as working in Python as `list.join(delimiter)`.
-A way to help rationalize this syntax is to not think of *join* as transforming a list into a string, 
-but rather as a function that places the delimiter string in-between elements of a list.
+파이썬에서 *split* 작동 방식을 살펴보면`a_string.split (delimiter)`,
+JavaScript와 같은 다른 언어에서 *join* 이 작동하는 방식은 파이썬에서`list.join (delimiter)`처럼 작동하는 것과 혼동하기 쉽습니다.
+이 구문을 합리화하는 데 도움이되는 방법은 *join* 을 문자열을 list에 넣는것으로 생각하지 않는것입니다.
+오히려 목록의 요소사이에 구분문자 문자열을 배치하는 함수로 사용하십시오.

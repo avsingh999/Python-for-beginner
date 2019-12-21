@@ -1,106 +1,106 @@
-# Tkinter Programming
+# Tkinter 프로그래밍
 
-Tkinter is the standard GUI library for Python. Python when combined with Tkinter provides a fast and easy way to create GUI applications. Tkinter provides a powerful object-oriented interface to the Tk GUI toolkit.
+Tkinter는 Python의 표준 GUI 라이브러리입니다. Python을 Tkinter와 결합하면 GUI응용프로그램을 빠르고쉽게 만들 수 있습니다. Tkinter는 Tk GUI툴킷에 강력한 객체지향 인터페이스를 제공합니다.
 
-Creating a GUI application using Tkinter is an easy task. All you need to do is perform the following steps −
+Tkinter를 사용하여 GUI 애플리케이션을 작성하는것은 쉬운 작업입니다. 다음단계를 수행하면됩니다-
 
-* Import the Tkinter module.
+* Tkinter모듈을 가져옵니다.
 
-* Create the GUI application main window.
+* GUI응용프로그램 기본창을 만듭니다.
 
-* Add one or more of the above-mentioned widgets to the GUI application.
+* 위에서 언급한 위젯 중 하나 이상을 GUI 애플리케이션에 추가하십시오.
 
-* Enter the main event loop to take action against each event triggered by the user.
+* 사용자가 trigger한 각 이벤트에 대해 조치를 수행하려면 기본 이벤트루프를 입력하십시오.
 
-## Example
+## 예시
 
 ```python
 #!/usr/bin/python
 
 import tkinter
 top = tkinter.Tk()
-# Code to add widgets will go here...
+# 위젯을 추가하는 코드는 여기에 있습니다 ...
 top.mainloop()
 ```
 
-## Tkinter Widgets
+## Tkinter위젯
 
-Tkinter provides various controls, such as buttons, labels and text boxes used in a GUI application. These controls are commonly called widgets.
+Tkinter는 GUI 애플리케이션에서 사용되는 버튼, 레이블 및 텍스트 상자와 같은 다양한 컨트롤을 제공합니다. 이러한 컨트롤을 일반적으로 위젯이라고합니다.
 
-There are currently `15` types of widgets in Tkinter. We present these widgets as well as a brief description in the following table −
+Tkinter에는 현재 `15`가지 유형의 위젯이 있습니다. 다음 표에서 이러한 위젯과 간략한 설명을 제공합니다.
 
 1. Button
 
-The Button widget is used to display buttons in your application.
+버튼 위젯은 애플리케이션에 버튼을 표시하는데 사용됩니다.
 
-2. Canvas
+2.  Canvas
 
-The Canvas widget is used to draw shapes, such as lines, ovals, polygons and rectangles, in your application.
+Canvas 위젯은 응용 프로그램에서 선, 타원, 다각형 및 사각형과 같은 모양을 그리는 데 사용됩니다.
 
 3. Checkbutton
 
-The Checkbutton widget is used to display a number of options as checkboxes. The user can select multiple options at a time.
+Checkbutton 위젯은 여러 옵션을 확인란으로 표시하는데 사용됩니다. 사용자는 한번에 여러옵션을 선택할 수 있습니다.
 
 4. Entry
 
-The Entry widget is used to display a single-line text field for accepting values from a user.
+Entry위젯은 사용자의 값을 승인하기 위한 한줄 텍스트필드를 표시하는데 사용됩니다.
 
 5. Frame
 
-The Frame widget is used as a container widget to organize other widgets.
+Frame 위젯은 다른 위젯을 구성하기위한 컨테이너 위젯으로 사용됩니다.
 
 6. Label
 
-The Label widget is used to provide a single-line caption for other widgets. It can also contain images.
+Label 위젯은 다른 위젯에 한줄 캡션을 제공하는데 사용됩니다. 이미지도 포함할 수 있습니다.
 
 7. Listbox
 
-The Listbox widget is used to provide a list of options to a user.
+Listbox 위젯은 사용자에게 옵션 list를 제공하는데 사용됩니다.
 
 8. Menubutton
 
-The Menubutton widget is used to display menus in your application.
+Menubutton위젯은 응용프로그램에 메뉴를 표시하는데 사용됩니다.
 
 9. Menu
 
-The Menu widget is used to provide various commands to a user. These commands are contained inside Menubutton.
+Menu위젯은 사용자에게 다양한 명령을 제공하는데 사용됩니다. 이 명령들은 메뉴버튼 안에 있습니다.
 
 10. Message
 
-The Message widget is used to display multiline text fields for accepting values from a user.
+Message위젯은 사용자의 값을 승인하기위해 여러줄 텍스트 필드를 표시하는데 사용됩니다.
 
 11. Radiobutton
 
-The Radiobutton widget is used to display a number of options as radio buttons. The user can select only one option at a time.
+Radiobutton위젯은 Radiobutton으로 여러 옵션을 표시하는데 사용됩니다. 사용자는 한번에 하나의 옵션만 선택할 수 있습니다.
 
 12. Scale
 
-The Scale widget is used to provide a slider widget.
+Scale위젯은 slider위젯을 제공하는데 사용됩니다.
 
 13. Scrollbar
 
-The Scrollbar widget is used to add scrolling capability to various widgets, such as list boxes.
+Scrollbar위젯은 Listbox와 같은 다양한 위젯에 스크롤기능을 추가하는데 사용됩니다.
 
 14. Text
 
-The Text widget is used to display text in multiple lines.
+Text위젯은 여러줄로 텍스트를 표시하는데 사용됩니다.
 
 15. Toplevel
 
-The Toplevel widget is used to provide a separate window container.
+Toplevel위젯은 별도의 창컨테이너를 제공하는데 사용됩니다.
 
 16. Spinbox
 
-The Spinbox widget is a variant of the standard Tkinter Entry widget, which can be used to select from a fixed number of values.
+Spinbox 위젯은 표준 Tkinter Entry위젯의 변형으로, 고정된 수의값 중에서 선택할 수 있습니다.
 
 17. PanedWindow
 
-A PanedWindow is a container widget that may contain any number of panes, arranged horizontally or vertically.
+PanedWindow는 가로 또는 세로로 배열된 여러 개의 창을 포함할 수 있는 컨테이너 위젯입니다.
 
 18. LabelFrame
 
-A labelframe is a simple container widget. Its primary purpose is to act as a spacer or container for complex window layouts.
+LabelFrame은 간단한 컨테이너 위젯입니다. 주요목적은 복잡한 창 레이아웃을위한 스페이서 또는 컨테이너 역할을하는 것입니다.
 
 19. tkMessageBox
 
-This module is used to display message boxes in your applications.
+이 모듈은 응용 프로그램에서 메시지 상자를 표시하는데 사용됩니다.

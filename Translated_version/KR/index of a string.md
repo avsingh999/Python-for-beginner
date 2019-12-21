@@ -1,4 +1,4 @@
-## Finding index of a String
+## 문자열의 인덱스 찾기
 
 ```python
 s="python"

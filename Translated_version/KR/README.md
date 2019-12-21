@@ -10,12 +10,12 @@
 </p>
 
 
-Python is an object-oriented programming language created by Guido Rossum in 1989. It is ideally designed for rapid prototyping of complex applications. It has interfaces to many OS system calls and libraries, and is extensible to C or C++. Many large companies use the Python programming language, including NASA, Google, YouTube, BitTorrent, etc.
-Python is widely used in Artificial Intelligence, Natural Language Generation, Neural Networks, and other advanced fields in Computer Science. Python has a deep focus on code readability & this class will teach you python from the basics.
+파이썬은 1989년 Guido Rossum이 만든 객체지향 프로그래밍 언어입니다. 복잡한 응용 프로그램의 신속한 프로토-타이핑을 위해 이상적으로 설계되었습니다. 많은 OS시스템 호출 및 라이브러리에 대한 인터페이스가 있으며 C 또는 C ++로 확장 할 수 있습니다. NASA, Google, YouTube, BitTorrent 등을 포함한 많은 대기업에서 파이썬 프로그래밍 언어를 사용합니다.
+파이썬은 인공지능, 자연언어 생성, 신경네트워크 및 컴퓨터과학의 기타 고급분야에서 널리 사용됩니다. 파이썬은 코드 가독성에 중점을 두고 있으며 이 클래스는 기본부터 파이썬을 가르쳐줍니다.
 
 
-### Python-for-beginner
-This repostory contains simple examples of code in <strong>python</strong>. It will help beginners learn <strong>python</strong> from the beginning.
+### 초보자를위한 파이썬
+이 저장소에는 <strong>파이썬</strong>의 간단한 코드 예제가 포함되어 있습니다. 초보자가 처음부터 <strong>파이썬</strong>을 배우는 데 도움이됩니다.
 
 #### Getting Started
 - [Installing Python3](https://github.com/lalkanhaiya/Python-for-beginner/blob/master/how-to-install-python.md)
@@ -65,16 +65,16 @@ This repostory contains simple examples of code in <strong>python</strong>. It w
 - [mergesort](https://github.com/lalkanhaiya/Python-for-beginner/blob/master/merge_sort_in_python.py)
 - [segment tree](https://github.com/avsingh999/Python-for-beginner/blob/master/segment_tree_implementaion_in_python.md) 
 - [sieve of eratosthenes]('https://github.com/anuragphadnis/Python-for-beginner/blob/master/SieveOfEratosthenes.py')
-## How to Contribute
+## 참여하는 방법
 
-- claim whichever issue you want.
-- search for an example or code in another language (e.g. ruby) that would be a better solution for your issue
-- create file with the title of the issue as the filename, and paste some code showing an example of that issue
-- create a pull request
+-원하는 문제를 말하십시오.
+-문제에 대한 더 나은 해결책이 될 다른 언어 (예 : ruby)로 예제 또는 코드를 검색하십시오.
+-문제 제목을 파일 이름으로 사용하여 파일을 만들고 해당 문제의 예를 보여주는 코드를 붙여 넣습니다.
+-pull request 생성
 
 ## Help
 ```
-these links will help you with your contribution
+ 이 링크는 당신의 기여에 도움이 될 것입니다
 ```
 
 - https://www.pythonforbeginners.com/
@@ -93,7 +93,7 @@ these links will help you with your contribution
 [<img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="30" padding="10">](https://github.com/avsingh999)
 [<img src="https://cdn3.iconfinder.com/data/icons/transparent-on-dark-grey/500/icon-04-512.png" width="30" padding="10">](https://www.instagram.com/avsingh999/)
 
-thank you
+감사합니다
 
 <p align='center'>:heart: :heart: :heart:</p>
 <p align='center'> ** python ** </p>

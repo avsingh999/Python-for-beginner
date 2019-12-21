@@ -1,8 +1,8 @@
-## Python Lists
+## 파이썬 Lists
 
-List is a collection which is ordered and changeable. Allows duplicate members.
+List은 주문 및 변경 가능한 모음입니다. 중복 멤버를 허용합니다.
 
-In python lists are written in square brackets.
+파이썬에서 list는 대괄호로 작성됩니다.
 
 ```python
 L = ["git", "github", "version_control"]
@@ -10,24 +10,24 @@ print(L)
 L = [1, "github", 3.4]
 print(L)
 ```
-#### Access Items
+#### 접근항목
 
-you can access the item using index number.
+index번호를 사용하여 항목에 접근할 수 있습니다.
 
 ```python
 L = ["git", "github", "version_control"]
 print(L[1])
 ```
-#### Change Item value
+#### 항목값 바꾸기
 
-you can change value by refering to index number.
+index번호를 참조하여 값을 변경할 수 있습니다.
 
 ```python
 L = ["git", "github", "version_control"]
 L[1] = 123
 print(L)
 ```
-#### Traverse the list
+#### list 탐색
 
 ```python
 L = ["git", "github", "version_control"]
@@ -35,7 +35,7 @@ for item in L:
   print (item)
 ```
 
-#### Check if Item exists
+#### 항목이 존재하는지 확인
 
 ```python
 L = ["git", "github", "version_control"]
@@ -43,7 +43,7 @@ if "git" in L:
   print('Yes it exists!')
 ```
 
-#### List size
+#### List 크기
 
 ```python
 L = ["git", "github", "version_control"]
@@ -51,7 +51,7 @@ length = len(L)
 print(length)
 ```
 
-#### Adding items to list
+#### list에 항목 추가하기
 
 ```python
 L = ["git", "github", "version_control"]
@@ -65,9 +65,9 @@ L.insert(1, "hey");
 print(L)
 ```
 
-#### Remove items from list
+#### list에서 항목 제거하기
 
-remove(), it removes the specified item
+remove (), 이것은 지정된 항목을 제거합니다
 
 ```python
 L = ["git", "github", "version_control"]
@@ -75,7 +75,7 @@ L.remove("git")
 print(L)
 ```
 
-pop(), removes the specified index, (or the last item if index is not specified)
+pop (), 이것은 지정된 index 제거합니다 (또는 index가 지정되지 않은 경우엔 마지막 항목).
 
 ```python
 L = ["git", "github", "version_control"]
@@ -83,7 +83,7 @@ L.pop()
 print(L)
 ```
 
-del, removes the specified index
+del, 이것은 지정된 index을 제거합니다
 
 ```python
 L = ["git", "github", "version_control"]
@@ -91,7 +91,7 @@ del L[1]
 print(L)
 ```
 
-del, can also delete the entire list
+del, 또한 이것은 list전체를 삭제할 수도 있습니다
 
 ```python
 L = ["git", "github", "version_control"]
@@ -99,7 +99,7 @@ del L
 print(L)     #this will cause an error because "L" no longer exists.
 ```
 
-clear(), method empties the list
+clear(), 이것은 list를 비우는 메소드입니다. 
 
 ```python
 L = ["git", "github", "version_control"]
@@ -109,7 +109,7 @@ print(L)
 
 #### List() contructor
 
-L = list(("git", "github", "digital")) # note the double round-brackets
+L = list(("git", "github", "digital")) # 이중 대괄호에 유의
 print(L)
 
 | Command | Description |
@@ -126,7 +126,7 @@ print(L)
 | reverse() | Reverse the order of list |
 | sort() | Sort the list |
 
-## Example 1
+## 예시 1
 
 ```python
 a = [5,10,15,20,25,30,35,40]
@@ -138,7 +138,7 @@ print("a[0:3] = ", a[0:3])
 print("a[5:] = ", a[5:])
 ```
 
-## Example 2
+## 예시 2
 
 ```python
 t = (5,'program', 1+3j)
@@ -149,14 +149,14 @@ print("t[1] = ", t[1])
 print("t[0:3] = ", t[0:3])
 ```
 
-## Example 3
+## 예시 3
 
 ```python
 a = {5,2,3,1,4}
 
-# printing set variable
+# 설정된 변수 출력
 print("a = ", a)
 
-# data type of variable a
+# a의 데이터타입
 print(type(a))
 ```

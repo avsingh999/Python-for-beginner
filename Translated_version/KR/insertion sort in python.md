@@ -1,6 +1,6 @@
-# Python program for implementation of Insertion Sort 
+# 삽입정렬 구현을 위한 Python 프로그램
   
-# Function to do insertion sort 
+# 삽입정렬 기능
 
 ```python
 def insertionSort(nlist):

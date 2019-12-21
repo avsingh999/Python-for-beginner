@@ -1,4 +1,4 @@
-# Introducing the DataFrame and Cleaning NaN values
+# DataFrame 및 NaN 값 정리 소개
 
 Import and alias Pandas:
 
@@ -6,7 +6,7 @@ Import and alias Pandas:
 import pandas as pd
 ```
 
-Load up the table from the link, and extract the dataset out of it. If you're having issues with this, look carefully at the sample code provided in the reading:
+링크에서 테이블을 로드하고, 데이터셋을 추출하십시오. 이와 관련하여 문제가 있는 경우 읽기에 제공된 샘플 코드를 주의해서 보십시오:
 
 
 ```python
@@ -14,7 +14,7 @@ url='http://www.espn.com/nhl/statistics/player/_/stat/points/sort/points/year/20
 df = pd.read_html(url, header=0)[0]
 ```
 
-Next up, rename the columns so that they are _similar_ to the column definitions provided to you on the website. Be careful and don't accidentally use any column names twice. If a column uses special characters, you can replace them with regular characters to make it easier to work with:
+다음으로 열이름을 웹사이트에서 제공한 열정의와 _similar_ 가 되도록 이름을 바꿉니다. 조심하고 실수로 열이름을 두번 사용하지 마십시오. 열이 특수문자를 사용하는 경우 일반문자로 바꾸어 보다 쉽게 작업할 수 있습니다:
 
 
 ```python
@@ -157,10 +157,10 @@ df.head()
 </div>
 
 
-Convert argument to a numeric type.
-* If ‘raise’, then invalid parsing will raise an exception
-* If ‘coerce’, then invalid parsing will be set as NaN
-* If ‘ignore’, then invalid parsing will return the inpu
+인자를 숫자 타입으로 변환하십시오.
+* ‘raise‘인 경우, 유효하지 않은 parsing은 예외를 발생시킵니다
+* ‘coerce‘인 경우, 유효하지 않은 parsing NaN으로 설정됩니다
+* ‘ignore’인 경우, 유효하지 않은 parsing은 inpu를 반환합니다
 
 
 ```python
@@ -170,23 +170,23 @@ df['A']= pd.to_numeric(df.GP, errors='coerce')
 df['PTS']= pd.to_numeric(df.GP, errors='coerce')
 ```
 
-Detect missing values (NaN in numeric arrays, None/NaN in object arrays)
+결측값 감지 (숫자 배열의 NaN, 객체 배열의 None / NaN)
 
 
 ```python
 selector=df.GP.isnull() & df.G.isnull()& df.A.isnull() & df.PTS.isnull()
 ```
 
-Locate the NaN data using the index
+index를 사용하여 NaN 데이터를 찾습니다
 
 
 ```python
-#selector
+#선택자
 bad_rows=df[selector].index
 
 ```
 
-Remove rows or columns by specifying label names and corresponding axis, or by specifying directly index or column names
+label이름과 해당 축을 지정하거나 직접 index 또는 열이름을 지정하여 행 또는 열을 제거하십시오.
 
 
 ```python
@@ -324,7 +324,7 @@ df.head()
 </table>
 </div>
 
-Make sure there are no holes in your index by resetting it. There is an example of this in the reading material. By the way, drop the original index.
+index를 재설정하여 index에 구멍이 없는지 확인하십시오. 읽은 자료에는 이것의 예가 있습니다. 그건 그렇고, 원래 index를 삭제하십시오.
 
 
 ```python
@@ -457,9 +457,9 @@ df.head()
 
 
 
-Do the data-types of each column reflect the values you see when you look through the data using a text editor / spread sheet program? If you see object where you expect to see int32 or float64, that is a good indicator that there might be a string or missing value or erroneous value in the column.
+각 열의 데이터 유형은 텍스트 편집기 / 스프레드 시트 프로그램을 사용하여 데이터를 볼 때 표시되는 값을 반영합니까? int32 또는 float64가 표시될 것으로 예상되는 객체가 표시되면 열에 문자열 또는 누락된 값 또는 잘못된 값이 있을 수 있음을 나타내는 좋은지표입니다.
 
-Check the data type of all columns, and ensure those that should be numeric are numeric.
+모든 열의 데이터 유형을 확인하고 숫자여야하는 숫자가 숫자인지 확인하십시오.
 
 
 ```python
@@ -653,9 +653,9 @@ df.dtypes
 
 ```
 
-Try use your_data_frame['your_column'].unique() or equally, your_data_frame.your_column.unique() to see the unique values of each column and identify the rogue values.
+your_data_frame [ 'your_column']. unique () 또는 동일하게 your_data_frame.your_column.unique ()를 사용하여 각 열의 고유 한 값을보고 불량 값을 식별하십시오.
 
-If you find any value that should be properly encoded to NaNs, you can convert them either using the na_values parameter when loading the dataframe. Or alternatively, use one of the other methods discussed in the reading.
+NaN으로 올바르게 인코딩해야하는 값을 찾으면 데이터 프레임을 로드할 때 na_values 매개변수를 사용하여 변환할 수 있습니다. 또는 대안으로 독서에서 논의된 다른방법 중 하나를 사용하십시오.
 
 
 ```python
@@ -669,7 +669,7 @@ df.PCT.unique()
 
 ```
 
-Figure out which indexing method you would need to use in order to index your dataframe with: [2:4, 'col3']. Finally, display the results:
+[2 : 4, 'col3']으로 데이터 프레임을 indexing하기 위해 사용해야하는 indexing 방법을 알아 봅니다. 마지막으로 결과를 표시하십시오.
 
 ```python
 df.iloc[2:4, [3]]

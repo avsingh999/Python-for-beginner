@@ -1,18 +1,18 @@
-#Decision making is required when we want to execute a code only if a certain condition is satisfied.
+#특정 조건이 만족되는 경우에만 코드를 실행하려면 의사 결정이 필요합니다.
 
-#Simple if Statement :-
+#간단한 if 문 :-
 
 if test expression:
     statement(s)
 
-#If-Else Statement :-
+#if-Else 문 :-
 
 if test expression:
     Body of if
 else:
     Body of else
 
-#Elif (else if ladder):-
+#Elif (else if 사다리):-
 
 if test expression:
     Body of if

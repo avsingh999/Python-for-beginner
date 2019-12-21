@@ -1,25 +1,25 @@
-## Python map() function
+## 파이썬 map() 함수
 
-##### map() function returns a list of the results after applying the given function to each item of a given iterable (list, tuple etc.)
+##### map() 함수는 주어진 iterable (목록, 튜플 등)의 각 항목에 주어진 함수를 적용한 후 결과 list를 반환합니다.
 
 
-#### Syntax
+#### 문법
 
 ```python
 map(fun, iter)
 ```
 
-#### Parameters :
+#### 매개변수들 :
 
 ```
-fun : It is a function to which map passes each element of given iterable.
-iter : It is a iterable which is to be mapped.
+fun : 주어진 iterable의 각 요소를 map이 전달하는 함수입니다.
+iter : 맵핑될 iterable입니다.
 ```
 
 
-## Example 
+## 예시
 
-Calculate the length of each word in the tuple:
+튜플에서 각 단어의 길이를 계산하십시오:
  
 ```python
 def myfunc(n):
@@ -30,6 +30,6 @@ x = map(myfunc, ('apple', 'banana', 'cherry'))
 print(list(x))
 ```
 
-#### Output
+#### 출력
 
 [5, 6, 6]

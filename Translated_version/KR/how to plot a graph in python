@@ -1,23 +1,23 @@
 
-# importing the required module 
-import matplotlib.pyplot as plt 
+# 필요한 모듈 가져오기
+matplotlib.pyplot을 plt로 가져 오기
   
-# x axis values 
+# x축 값
 x = [1,2,3] 
-# corresponding y axis values 
+# 해당 y축 값
 y = [2,4,1] 
   
-# plotting the points  
+# 점 plot하기
 plt.plot(x, y) 
   
-# naming the x axis 
+# x축 이름짓기
 plt.xlabel('x - axis') 
-# naming the y axis 
+# y축 이름짓기
 plt.ylabel('y - axis') 
   
-# giving a title to my graph 
-plt.title('My first graph!') 
+# 내 그래프에 이름짓기
+plt.title('내 첫 그래프!') 
   
-# function to show the plot 
+# plot을 보여주는 함수
 plt.show() 
 

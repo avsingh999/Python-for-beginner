@@ -1,33 +1,32 @@
-# Python Input()
+# 파이썬 input()
 
-Function to save a user's response.
+사용자의 응답을 저장하는 함수.
 
-## Syntax
-
+## 문법
 ```python
 input(prompt)
 ```
 
-## Function return
+## 함수 반환
 
-The input function returns the string written by the user.
+입력함수는 사용자가 작성한 문자열을 반환합니다.
 
-## Function parameter
+## 함수 매개변수
 
-The function can receive a prompt parameter to write a message before the input
+이 함수는 입력전에 메시지를 작성하는 프롬프트 매개변수를 받을 수 있습니다.
 
-## Examples:
+## 예시들:
 
-1. Getting the user's name:
-
-```python
-name = input('What is your name? ')
-```
-
-3. Getting the user's age:
+1. 사용자의 이름을 받는다:
 
 ```python
-age = int(input('How old are you? '))
+name = input('이름이 뭔가요? ')
 ```
 
-Remember that the response of the input is aways a string, so to make the age a integer number we have to change the type from string to int by using the function int()
+3. 사용자의 나이를 받는다:
+
+```python
+age = int(input('몇살인가요? '))
+```
+
+입력의 응답은 항상 문자열이므로, 나이를 정수로 만들려면 int () 함수를 사용하여 유형을 문자열에서 int로 바꿔야합니다.

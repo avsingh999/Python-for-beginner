@@ -1,26 +1,26 @@
 class Graph:
     def __init__(self):
-        # dictionary containing keys that map to the corresponding vertex object
+        # 해당 정점 객체에 매핑되는 키가 포함 된 dictionary
         self.vertices = {}
 
     def add_vertex(self, key):
-        """Add a vertex with the given key to the graph."""
+        """주어진 키를 가진 꼭지점을 그래프에 추가."""
         vertex = Vertex(key)
         self.vertices[key] = vertex
 
     def get_vertex(self, key):
-        """Return vertex object with the corresponding key."""
+        """해당 키로 정점 객체를 반환합니다."""
         return self.vertices[key]
 
     def __contains__(self, key):
         return key in self.vertices
 
     def add_edge(self, src_key, dest_key, weight=1):
-        """Add edge from src_key to dest_key with given weight."""
+        """주어진 무게로 src_key에서 dest_key로 가장자리를 추가하십시오."""
         self.vertices[src_key].add_neighbour(self.vertices[dest_key], weight)
 
     def does_edge_exist(self, src_key, dest_key):
-        """Return True if there is an edge from src_key to dest_key."""
+        """src_key에서 dest_key까지의 가장자리가 있으면 True를 반환합니다."""
         return self.vertices[src_key].does_it_point_to(self.vertices[dest_key])
 
     def display(self):
@@ -49,31 +49,31 @@ class Vertex:
         self.points_to = {}
 
     def get_key(self):
-        """Return key corresponding to this vertex object."""
+        """이 꼭짓점 객체에 해당하는 리턴 키."""
         return self.key
 
     def add_neighbour(self, dest, weight):
-        """Make this vertex point to dest with given edge weight."""
+        """이 꼭지점을 지정된 모서리 가중치로 대상으로 지정하십시오."""
         self.points_to[dest] = weight
 
     def get_neighbours(self):
-        """Return all vertices pointed to by this vertex."""
+        """이 정점이 가리키는 모든 정점을 반환합니다. """
         return self.points_to.keys()
 
     def get_weight(self, dest):
-        """Get weight of edge from this vertex to dest."""
+        """이 정점에서 목적지까지의 가장자리 가중치를 얻습니다."""
         return self.points_to[dest]
 
     def does_it_point_to(self, dest):
-        """Return True if this vertex points to dest."""
+        """이 정점이 dest를 가리키면 True를 반환합니다"""
         return dest in self.points_to
 
 
 def mst_prim(g):
-    """Return a minimum cost spanning tree of the connected graph g."""
-    mst = Graph()  # create new Graph object to hold the MST
+    """연결된 그래프g의 최소 비용 범위 트리를 반환합니다."""
+    mst = Graph()  # MST를 보유 할 새로운 Graph 객체 생성
 
-    # if graph is empty
+    # 그래프가 비어있는 경우
     if not g:
         return mst
 
@@ -81,8 +81,8 @@ def mst_prim(g):
     smallest_distance = {}
     unvisited = set(g)
 
-    u = next(iter(g))  # select any one vertex from g
-    mst.add_vertex(u.get_key())  # add a copy of it to the MST
+    u = next(iter(g))  # g에서 하나의 꼭짓점을 선택하십시오
+    mst.add_vertex(u.get_key())  # MST에 사본을 추가하십시오
     unvisited.remove(u)
 
     for n in u.get_neighbours():
@@ -93,7 +93,7 @@ def mst_prim(g):
 
     while (smallest_distance):
         outside_mst = min(smallest_distance, key=smallest_distance.get)
-        # get the nearest neighbour inside the MST
+        # MST 내부에서 가장 가까운 이웃을 얻는다
         inside_mst = nearest_neighbour[outside_mst]
         mst.add_vertex(outside_mst.get_key())
         mst.add_edge(outside_mst.get_key(), inside_mst.get_key(),

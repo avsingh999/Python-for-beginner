@@ -1,14 +1,14 @@
-# Substring of string in Python 
+# 파이썬에서 문자열의 부분 문자열
 
-We can get substring from string (slicing) by following different ways: 
+다른방법으로 문자열(슬라이싱)에서 부분 문자열을 얻을 수 있습니다.
 
-1. Specifying start and end index. a[startIndex: endIndex]
-2. Specifying just end index. a[:endIndex]
-3. Specifying just start index. a[startIndex:]
+1. 시작 및 종료 index 지정. a[startIndex : endIndex]
+2. 종료 index 지정. a[:endIndex]
+3. 시작 index만 지정. a[startIndex :]
 
-Specifying negative index will be equivalent to that index starting from end of the string. 
+음수index를 지정하는 것은 문자열 끝에서 시작하는 index시작과 같습니다.
 
-## Example
+## 예
 
 ```python
 myVar = "Hello World"
@@ -18,7 +18,7 @@ sub1 = myVar[2:]
 sub2 = myVar[:-3]
 ```
 
-The output will be as follows: 
+출력은 다음과 같을것입니다:
 
 ```sh
 Hello

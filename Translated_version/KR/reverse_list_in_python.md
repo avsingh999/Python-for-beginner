@@ -1,5 +1,5 @@
-# Reverse List in Python
+# 파이썬에서 역list
 
-To reverse the list in python use `[::-1]`.
+파이썬에서 list를 뒤집으려면 `[::-1]`을 사용하십시오.
 
-* for e.g if list is `a = [1,2,3]`, so  to reverse it you can do `a = a[::-1]`. It will reverse the list and store back to the variable `a`.
+* 예를 들어 list가 `a = [1,2,3]`인 경우 `a = a[::-1]`으로 뒤집는 것을 수행할 수 있습니다. 그러면 list를 되돌리고 변수 `a`에 다시 저장합니다.

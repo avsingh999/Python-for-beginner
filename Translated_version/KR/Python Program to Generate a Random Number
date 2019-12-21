@@ -1,6 +1,6 @@
-# Program to generate a random number between 0 and 9
+# 0에서 9 사이의 난수를 생성하는 프로그램
 
-# import the random module
+# random module 가져오기
 import random
 
 print(random.randint(0,9))

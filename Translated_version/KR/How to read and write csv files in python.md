@@ -1,9 +1,9 @@
-# How read and write csv files in python
+# 파이썬에서 CSV 파일을 읽고 쓰는 방법
 
-CSV files, which are commonly used for data exports, can easily be read or created using the python standard library.
+데이터 내보내기에 일반적으로 사용되는, CSV 파일은, 파이썬 표준 라이브러리를 사용하여 쉽게 읽거나 작성할 수 있습니다.
 
-# Example: reading values from a csv file
-The following program reads the contents of a csv file containing strings separated by commas on multiple lines.
+# 예시: CSV 파일에서 값 읽기
+다음 프로그램은 여러줄에서 쉼표로 구분된 문자열을 포함하는 csv 파일의 내용을 읽습니다.
 
 ```python
 import csv
@@ -13,14 +13,14 @@ with open('eggs.csv') as csvfile:
         print(', '.join(row))
 ```
 
-Output:
+출력:
 ```bash
 Spam, Spam, Spam, Spam, Spam, Baked Beans
 Spam, Lovely Spam, Wonderful Spam
 ```
 
-# Example: creating a csv file from a 2D list
-The following program creates a csv file from strings in a two-dimensional list.
+# 예시: 2차원 list으로 CSV 파일 작성
+다음 프로그램은 2차원 list의 문자열로 csv 파일을 만듭니다.
 
 ```python
 import csv
@@ -34,4 +34,4 @@ with open('eggs.csv', 'w') as csvfile:
         spamwriter.writerow(row)
 ```
 
-When you run the program, a csv file will be created, containing the values from `output_list`. Each sublist corresponds to one line.
+프로그램을 실행하면 `output_list` 의 값을 포함하는 csv 파일이 생성됩니다. 각 하위 목록은 한 줄에 해당합니다.
