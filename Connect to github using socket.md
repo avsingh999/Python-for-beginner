@@ -1,5 +1,6 @@
-# Socket programming in python example
-# this program connects to github.com using sockets
+### Socket programming in python example
+**this program connects to github.com using sockets**
+
 ```python
 import socket
 import sys

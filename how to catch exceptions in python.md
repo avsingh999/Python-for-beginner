@@ -1,4 +1,4 @@
-# What is a try-except block?
+## What is a try-except block?
 ---
 Occassionally, the code you write fails, whether by accident or on purpose. This generates an error, or `exception` as we call it. Python will normally bork, and generate the message that caused it to fail. Sometimes we want to avoid stopping code, or trace what the error in particular that caused it. To do so, we make use of the `try-except` block. There are 4 different methods that we can utilize:
 

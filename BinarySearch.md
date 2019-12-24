@@ -1,6 +1,6 @@
-## Python Program for recursive binary search. 
+### Python Program for recursive binary search. 
   
-### Returns index of `x` in arr if present, else `-1` 
+#### Returns index of `x` in arr if present, else `-1` 
 
 ```python
 def binarySearch (arr, l, r, x): 

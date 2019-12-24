@@ -1,5 +1,4 @@
-# The collections module contains some helpful data structures
-# https://docs.python.org/3/library/collections.html#module-collections
+```python
 import collections
 
 # namedtuple() defines a subclass of tuple with named fields
@@ -36,3 +35,4 @@ cnt = collections.Counter()
 for word in ['red', 'blue', 'red', 'green', 'blue', 'blue']:
     cnt[word] += 1
 print(cnt)
+```

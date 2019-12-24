@@ -1,4 +1,4 @@
-# Algorithm to find sum in given range in given 1D array
+### Algorithm to find sum in given range in given 1D array
 
 1. Store an array of integers to a variable called, arr
 2. Input the range upto which you want to perform the sum
@@ -10,7 +10,7 @@
 8. Go to step 5
 9. Print the value of sum
 
-## Code:
+### Code:
 
 ```python
 arr = [1, 2, 3, 4, 5]

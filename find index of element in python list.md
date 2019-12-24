@@ -1,4 +1,4 @@
-# Find index of element in python list
+## Find index of element in python list
 
 In simple terms, `index()` method finds the given element in a list and returns its position.
 
@@ -12,18 +12,18 @@ The syntax of `index()` method for list is:
 list.index(element)
 ```
 
-# `index()` Parameters
+### `index()` Parameters
 
 The index method takes a single argument:
 * **element** - element that is to be searched.
 
-# Return value from `index()`
+### Return value from `index()`
 
 The `index()` method returns the index of the element in the list.
 
 If not found, it raises a ValueError exception indicating the element is not in the list.
 
-# Example
+### Example
 
 ```python
 # vowels list

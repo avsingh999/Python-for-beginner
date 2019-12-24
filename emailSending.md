@@ -1,3 +1,4 @@
+```python
 import smtplib
 
 server=smtplib.SMTP("smtp.gmail.com",587)
@@ -13,3 +14,4 @@ server.sendmail('from_mail@gmail.com',
 server.quit()
 
 print("email sent successfully")
+```

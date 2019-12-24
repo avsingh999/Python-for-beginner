@@ -1,6 +1,6 @@
-# Heap Sort
+## Heap Sort
 
-## Description
+### Description
 
 The heapsort algorithm can be divided into two parts.
 
@@ -18,7 +18,7 @@ Heapsort can be performed in place. The array can be split into two parts, the s
 
 __Worst Case Complexity: n * log(n)__
 
-## Code
+### Code
 ```python
 def heapify(arr, n, i):
 	# Find largest among root and children

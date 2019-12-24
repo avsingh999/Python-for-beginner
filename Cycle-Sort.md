@@ -1,4 +1,4 @@
-# Cycle Sort!
+### Cycle Sort!
 
 Cycle sort is an **in-place sorting** Algorithm, **unstable sorting** algorithm, a comparison sort that is theoretically optimal in terms of the total number of writes to the original array.
 
@@ -7,7 +7,7 @@ Cycle sort is an **in-place sorting** Algorithm, **unstable sorting** algorithm,
    edge directed from node i to node j if the element at i-th index must
    be present at j-th index in the sorted array.
 
-# Example
+#### Example
 
     arr[] = {10, 5,  2,  3}
     index =  0   1   2   3
@@ -47,7 +47,7 @@ Again rotate rest cycle that start with index '0' and item = 2
 Above is one iteration for cycle_stat = 0.
 Repeat above steps for cycle_start = 1, 2, ..n-2
 
-# Code
+### Code
 
 
     def cycleSort(array): 
@@ -99,7 +99,7 @@ Repeat above steps for cycle_start = 1, 2, ..n-2
     for i in range(0, n) : 
     	print(arr[i], end = ' ') 
 
-## References
+#### References
 
  1. https://en.wikipedia.org/wiki/Cycle_sort
  2.  https://www.geeksforgeeks.org/cycle-sort/

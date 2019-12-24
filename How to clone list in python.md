@@ -1,4 +1,4 @@
-# How to clone list in python
+### How to clone list in python
 
 A list can be copied with = operator. For example:
 
@@ -9,7 +9,7 @@ new_list = old_list
 
 The problem with copying the list in this way is that if you modify the new_list, the old_list is also modified.
 
-# Example
+### Example
 
 ```python
 old_list = [1, 2, 3]
@@ -37,7 +37,7 @@ The syntax of copy() method is:
 new_list = list.copy()
 ```
 
-# Example
+### Example
 
 ```python
 # mixed list

@@ -1,4 +1,4 @@
-# Counting characters in a string
+## Counting characters in a string
 
 ```python
 s = "string"
