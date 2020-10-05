@@ -14,7 +14,8 @@ def hello_world():
 @app.route('/about')
 def about_flask():
     return render_template('aboutFlask.html')
-
+def login():
+    return render_template('login.html')
 
 if __name__ == '__main__':
     app.run()
