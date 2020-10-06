@@ -24,7 +24,16 @@ This repostory contains simple examples of code in <strong>python</strong>. It w
 - [How to print in python](https://github.com/avsingh999/Python-for-beginner/blob/master/How%20to%20print%20in%20python.md)
 - [How to get input from user in python](https://github.com/avsingh999/Python-for-beginner/blob/master/How%20to%20get%20input%20from%20user%20in%20python.md)
 - [variables_in_python](https://github.com/avsingh999/Python-for-beginner/blob/master/variables_in_python.md)
+
+- [Basic Operations](https://github.com/avsingh999/Python-for-beginner/blob/master/Basic%20Operations.md)
 - [Basic_for loop_application](https://github.com/avsingh999/Python-for-beginner/blob/master/Basic_forloop_application.md)
+-[BinarySearch](https://github.com/avsingh999/Python-for-beginner/blob/master/BinarySearch.md)
+- [Connect to github using socket](https://github.com/avsingh999/Python-for-beginner/blob/master/Connect%20to%20github%20using%20socket.md)
+
+- [Diamond_pattern.py](https://github.com/avsingh999/Python-for-beginner/blob/master/diamond_pattern.py)
+
+
+
 - [if-else_python](https://github.com/avsingh999/Python-for-beginner/blob/master/if-else_python.md)
 - [Basics of Dictionary](https://github.com/avsingh999/Python-for-beginner/blob/master/Basics%20of%20Dictionary.md)
 - [How to add two lists in python](https://github.com/avsingh999/Python-for-beginner/blob/master/How%20to%20add%20two%20lists%20in%20python.md)
@@ -50,6 +59,8 @@ This repostory contains simple examples of code in <strong>python</strong>. It w
 - [lambda Function](https://github.com/avsingh999/Python-for-beginner/blob/master/lambda%20Function.md)
 - [list in python](https://github.com/avsingh999/Python-for-beginner/blob/master/list%20in%20python.md)
 - [list_in_python](https://github.com/avsingh999/Python-for-beginner/blob/master/list_in_python.md)
+
+- [math_functions.py](https://github.com/avsingh999/Python-for-beginner/blob/master/math_functions.py)
 - [reverse_list_in_python](https://github.com/avsingh999/Python-for-beginner/blob/master/reverse_list_in_python.md)
 - [while loop in python](https://github.com/avsingh999/Python-for-beginner/blob/master/while%20loop%20in%20python.md)
 - [while_loop_in_python](https://github.com/avsingh999/Python-for-beginner/blob/master/while_loop_in_python.md)
