@@ -107,5 +107,5 @@ these links will help you with your contribution
 thank you
 
 <p align='center'>:heart: :heart: :heart:</p>
-<p align='center'> ** python ** </p>
+<p align='center'> <strong>python</strong> </p>
 <p align='center'>Add info what you know in python and update any algorithm or any other</p>
