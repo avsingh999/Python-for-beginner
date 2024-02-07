@@ -1,4 +1,4 @@
-Django==2.2.24
+Django==3.2.24
 pkg-resources==0.0.0
 pytz==2019.3
 sqlparse==0.4.4
